@@ -1,1 +1,1 @@
-# -personal-project-angular
+# personal-project-angular
