@@ -1,0 +1,128 @@
+.sub-list {
+  li {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 17px;
+      color: #777777;
+
+      span {
+        display: flex;
+        align-items: center;
+      }
+
+      .fa-circle,
+      .fa-caret-right {
+        margin-right: 10px;
+        color: #00addb;
+        visibility: hidden;
+      }
+
+      .fa-caret-right {
+        font-size: 14px;
+      }
+
+      .fa-circle {
+        font-size: 8px;
+      }
+
+      &:hover {
+        span {
+          color: #2e2e2e;
+        }
+
+        .fa-circle,
+        .fa-caret-right {
+          visibility: visible;
+        }
+      }
+    }
+
+    &:hover {
+      .submenu {
+        display: block;
+      }
+    }
+  }
+
+  .group {
+    .submenu {
+      display: none;
+      width: 680px;
+      position: absolute;
+      background-color: #ffffff;
+      top: -9px;
+      left: 190px;
+      padding: 15px;
+      box-shadow: (0 0 #0000, 0 0 #0000), (0 0 #0000, 0 0 #0000),
+        (0.125rem 0.1rem 0.15rem #28245933, 0.25rem 0.25rem 0.4rem #28245926);
+
+      z-index: 10;
+
+      .header {
+        width: 100%;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        border-bottom: 3px solid #00addb;
+
+        h2 {
+          color: #00addb;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 27px;
+        }
+      }
+    }
+
+    .submenu-category {
+      padding: 10px;
+
+      .item {
+        margin-bottom: 20px;
+
+        .flex {
+          flex-direction: column;
+
+          img {
+            transition: all 0.3s;
+          }
+        }
+
+        &:hover {
+          .flex {
+            img {
+              transform: scale(1.1);
+              opacity: 0.7;
+            }
+
+            span {
+              color: #000000;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .group-3 {
+    .submenu {
+      .desktop {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .group:not(:first-child) {
+    .submenu {
+      .submenu-category {
+        padding-bottom: 45px;
+      }
+    }
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
