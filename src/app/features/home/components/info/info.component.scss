@@ -1,0 +1,40 @@
+.container {
+  padding: 20px;
+
+  .item {
+    padding: 10px 60px 10px 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 2px solid #dbdbdb;
+      justify-content: center;
+      margin-right: 20px;
+
+      i {
+        font-size: 30px;
+        color: #00addb;
+      }
+    }
+
+    .txt {
+      h4 {
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        color: #acaaaa;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+        0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+    }
+  }
+}
