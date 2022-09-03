@@ -1,0 +1,81 @@
+<div class="wrapper-card">
+    <div class="card-container relative">
+
+        <ng-container *ngIf="card.offer">
+            <div class="offer absolute">
+                <span>{{ card.offer }}% OFF</span>
+            </div>
+        </ng-container>
+
+        <div class="heart absolute">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="eye absolute">
+            <i class="fa-regular fa-eye"></i>
+        </div>
+
+        <div class="img flex ceter">
+            <a routerLink="/details" [queryParams]="{
+                    id:card.id,
+                    path:card.path
+                }">
+
+                <img [src]=" card.imgs[0]" [alt]="card.alt">
+            </a>
+
+        </div>
+
+        <div class="info flex center between">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+
+            </div>
+
+            <span>instock</span>
+        </div>
+
+        <h3 class="name">
+            <a routerLink="/details" [queryParams]="{
+                    id:card.id,
+                    path:card.path
+                }">
+                {{ card.name }}
+            </a>
+        </h3>
+
+        <p class="description">
+            {{ card.smallDesc}}
+        </p>
+
+        <div class="colors flex center">
+            <div class="color-1"></div>
+            <div class="color-2"></div>
+            <div class="color-3"></div>
+            <div class="color-4"></div>
+        </div>
+
+        <p class="price">
+            <span class="new">${{ card.price }}</span>
+            <ng-container *ngIf="card.oldPrice">
+                <span class="old">${{ card.oldPrice }}</span>
+            </ng-container>
+        </p>
+
+
+
+
+        <button class="relative">
+            <span class="relative">
+                <a routerLink="/details" [queryParams]="{
+                    id:card.id,
+                    path:card.path
+                }">VIEW DETAILS</a>
+            </span>
+        </button>
+    </div>
+</div>
