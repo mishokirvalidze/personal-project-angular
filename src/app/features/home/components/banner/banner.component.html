@@ -1,0 +1,44 @@
+<div class="container flex center between">
+    <div class="carousel">
+        <ng-container *ngIf="images && images.length > 0">
+            <div class="carousel-container relative">
+                <ng-container *ngFor="let img of images; let i = index">
+
+                    <img class="animation" [src]="img.imgSrc" [alt]="img.imgAlt"
+                        [ngClass]="{'active': (currentIndex$ | async) === i}">
+
+                </ng-container>
+
+                <div class="indicators absolute flex">
+                    <ng-container *ngFor="let dots of images; let i = index">
+                        <span class="dot" [ngClass]="{'dot-active': (currentIndex$ | async) === i}"
+                            (click)="selectedImage(i)">
+                        </span>
+                    </ng-container>
+                </div>
+
+
+                <div class="btn prev absolute flex center" (click)="onPrevClick()">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="btn next absolute flex center" (click)="onNextClick()">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+            </div>
+
+        </ng-container>
+    </div>
+
+    <div class="right-banner relative">
+        <div class="overlay absolute"></div>
+
+        <img src="../../../../assets/images/banner/banner-4.jpg" alt="banner">
+
+        <div class="text absolute">
+            <h3>ARMED PC GAMER</h3>
+            <p>Choose your pc and play!</p>
+            <a class="relative" href=""><span class="relative">Shop now</span></a>
+        </div>
+    </div>
+</div>
