@@ -1,0 +1,120 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="header flex">
+            <h2>SHOPPING CART</h2>
+        </div>
+
+        <ng-container *ngIf="cart | async as cart">
+            <ng-container *ngIf="cart && cart.length > 0; else empty">
+                <div class="cart-container flex between">
+                    <div class="product-list">
+                        <table>
+
+                            <thead>
+                                <th class="empty"></th>
+                                <th>Product Name</th>
+                                <th>Unit Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th class="empty"></th>
+                            </thead>
+
+
+                            <tbody>
+                                <ng-container *ngFor="let item of cart">
+
+                                    <tr>
+                                        <td class="td-img">
+                                            <div class="img">
+                                                <a routerLink="/details" [queryParams]="{id:item.id, path:item.path}">
+                                                    <img [src]="item.imgs[0]" [alt]="item.alt">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="td-name">
+                                            <a routerLink="/details" [queryParams]="{id:item.id, path:item.path}">
+                                                {{ item.name }}
+                                            </a>
+                                        </td>
+                                        <td class="td-price">${{ item.price }}</td>
+                                        <td class="td-input">
+                                            <form #form="ngForm">
+                                                <input type="number" min="1" name="quantity" onkeydown="return false"
+                                                    value="{{ item.quantity }}" [(ngModel)]="item.quantity"
+                                                    (change)="inputChange(item)">
+                                            </form>
+                                        </td>
+                                        <td class=" td-subtotal">
+                                            ${{ item.quantity * item.price }}
+                                        </td>
+                                        <td class="td-icon"><i class="fa-solid fa-trash-can" (click)="delete(item)"></i>
+                                        </td>
+                                    </tr>
+                                </ng-container>
+
+                            </tbody>
+
+                            <button class="btn-primary btn-clear relative" (click)="deleteAll()">
+                                <span class="btn-primary-child relative">Delete all</span>
+                            </button>
+                        </table>
+
+                    </div>
+
+                    <div class="summary">
+                        <h3>Discount Coupon</h3>
+                        <div class="input flex center">
+                            <input type="text" placeholder="Enter your code">
+                            <span>apply</span>
+                        </div>
+
+                        <div class="summary-purchase">
+                            <h3>Summary of your purchase:</h3>
+
+                            <ng-container *ngIf="subtotal | async as total">
+                                <div class="subtotal flex between center">
+                                    <span>Subtotal:</span>
+                                    <span>${{ total }}</span>
+                                </div>
+
+                                <div class="vat flex between center">
+                                    <span>Vat:</span>
+                                    <span>${{ total * 18 / 100}}</span>
+                                </div>
+
+                                <div class="shipping flex between center">
+                                    <span>Shipping:</span>
+                                    <span>$0.00</span>
+                                </div>
+
+                                <div class="total flex between center">
+                                    <h2>TOTAL:</h2>
+                                    <h2>${{ total + (total * 18 / 100) }}</h2>
+                                </div>
+                            </ng-container>
+
+                            <button class="btn-primary relative btn">
+                                <span class="btn-primary-child relative">
+                                    <a routerLink="/checkout">continue</a>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </ng-container>
+
+        <ng-template #empty>
+            <div class="empty-cart flex center">
+                <img src="../../../../assets/images/cart/cart.png" alt="">
+
+                <button class="btn-primary-child relative">
+                    <span class="btn-primary-child">
+                        <a routerLink="/">Back Home</a>
+                    </span>
+                </button>
+            </div>
+
+        </ng-template>
+    </div>
+</div>
