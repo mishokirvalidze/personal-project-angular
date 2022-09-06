@@ -1,1 +1,78 @@
-<p>contact works!</p>
+<div class="wrapper">
+    <div class="container">
+        <div class="component-header flex">
+            <h2 class="component-header-child">Contact us</h2>
+        </div>
+
+        <div class="contact-info">
+            <div class="container flex between center">
+                <div class="item flex center">
+                    <div class="icon flex center">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <div class="txt">
+                        <h4>Phone</h4>
+                        <p>2284 - 010101</p>
+                    </div>
+                </div>
+
+                <div class="item flex center">
+                    <div class="icon flex center">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="txt">
+                        <h4>E-Mail</h4>
+                        <p>megabyte@example.com</p>
+                    </div>
+                </div>
+
+                <div class="item flex center">
+                    <div class="icon flex center">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="txt">
+                        <h4>Location</h4>
+                        <p>Colón 0101, Olavarría</p>
+                    </div>
+                </div>
+
+                <div class="item flex center">
+                    <div class="icon flex center">
+                        <i class="bi bi-clock"></i>
+                    </div>
+                    <div class="txt">
+                        <h4>Hours</h4>
+                        <p>Monday to Friday 10:00 to 23:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container flex">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d37992.88862308122!2d-1.363106481491927!3d52.42721074958525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1662496023385!5m2!1sen!2sge"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form">
+                <h2>LEAVE A MESSAGE</h2>
+                <form>
+                    <ng-container *ngIf="!(isLoggedIn | async)">
+                        <input type="text" placeholder="Your Name" required minlength="2">
+                        <input type="email" placeholder="Your Email" required>
+                    </ng-container>
+
+                    <textarea placeholder="Write your message here..." rows="5" required maxlength="200"></textarea>
+
+                    <button class="btn-primary relative" (click)="submit()">
+                        <span class="btn-primary-child relative">SEND MESSAGE</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
