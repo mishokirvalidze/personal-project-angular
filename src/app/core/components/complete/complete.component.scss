@@ -1,0 +1,42 @@
+.container {
+  margin-top: 5px;
+  width: 100%;
+  background-color: #f5f7f8;
+  padding: 20px 0;
+
+  .img {
+    justify-content: center;
+    margin-bottom: 20px;
+
+    img {
+      max-height: 200px;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .p-complete {
+    color: #00addb;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .p-info {
+    font-size: 18px;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+  }
+
+  .txt {
+    font-size: 18px;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    display: block;
+    margin: auto;
+  }
+}
