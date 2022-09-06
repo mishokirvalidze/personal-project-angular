@@ -1,0 +1,71 @@
+.wrapper {
+  .container {
+    padding: 25px;
+
+    component-header {
+      margin-bottom: 30px;
+    }
+
+    .faqs {
+      width: 50%;
+      margin: auto;
+
+      .item {
+        background-color: #ffffff;
+        border-radius: 7px;
+        color: #3a3a3a;
+        padding: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        h4 {
+          font-weight: 400;
+        }
+
+        p {
+          height: 0;
+          overflow: hidden;
+          transition: all 0.5s ease;
+        }
+
+        i {
+          color: #00addb;
+          transition: transform 0.4s ease-in;
+        }
+
+        &:hover {
+          box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+            0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+        }
+      }
+
+      .active {
+        h4 {
+          color: #00addb;
+          font-weight: 600;
+        }
+
+        p {
+          padding-top: 15px;
+          height: 100px;
+          animation: fade 0.5s ease-in;
+        }
+
+        i {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

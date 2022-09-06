@@ -1,10 +1,14 @@
-import { Directive } from '@angular/core';
+import { Directive, HostListener, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[appFaqs]'
+  selector: '[appFaqs]',
 })
 export class FaqsDirective {
+  constructor(private el: ElementRef) {}
 
-  constructor() { }
-
+  @HostListener('click')
+  onClick(): void {
+    let element = this.el.nativeElement as HTMLDivElement;
+    element.classList.toggle('active');
+  }
 }
