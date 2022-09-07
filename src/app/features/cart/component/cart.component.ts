@@ -4,7 +4,7 @@ import {
   OnDestroy,
   OnInit,
 } from '@angular/core';
-import { Observable, tap, Subscription, BehaviorSubject } from 'rxjs';
+import { Observable, tap, Subscription } from 'rxjs';
 import { Icart } from '../../../shared/model/shared.model';
 import { CartService } from '../../../shared/service/cart.service';
 
@@ -20,10 +20,13 @@ export class CartComponent implements OnInit, OnDestroy {
   private unsubscribe: Subscription[] = [];
 
   ngOnInit(): void {
-    this.cartService.getCart();
-    this.cart = this.cartService.cartList;
+    setTimeout(() => {
+      this.cartService.getCart();
+      this.cartService.count();
+    }, 400);
 
-    this.count();
+    this.cart = this.cartService.cartList;
+    this.subtotal = this.cartService.subtotal;
   }
 
   ngOnDestroy(): void {
@@ -32,24 +35,10 @@ export class CartComponent implements OnInit, OnDestroy {
     });
   }
 
-  private subtotal$ = new BehaviorSubject<number>(0);
-  public subtotal = this.subtotal$.asObservable();
-
   public cart = new Observable<Icart[]>();
+  public subtotal = new Observable<number>();
 
   private arr: Icart[] = [];
-
-  private count(): void {
-    let subTotal = 0;
-
-    this.cart.forEach((items) => {
-      items.forEach((item) => {
-        subTotal += item.quantity * item.price;
-      });
-    });
-
-    this.subtotal$.next(subTotal);
-  }
 
   public inputChange(item: Icart) {
     this.unsubscribe.push(
@@ -70,7 +59,7 @@ export class CartComponent implements OnInit, OnDestroy {
     });
 
     this.cartService.pushInCartList(cartArray);
-    this.count();
+    this.cartService.count();
   }
 
   public delete(item: Icart): void {
@@ -85,7 +74,7 @@ export class CartComponent implements OnInit, OnDestroy {
     );
 
     this.cartService.deleteProduct(this.arr);
-    this.count();
+    this.cartService.count();
   }
 
   public deleteAll(): void {

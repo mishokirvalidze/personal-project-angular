@@ -2,24 +2,6 @@
   .container {
     padding: 25px;
 
-    .header {
-      border-bottom: 2px solid #7777772b;
-      margin: 50px 0px 20px;
-      justify-content: center;
-
-      h2 {
-        text-align: center;
-        text-transform: uppercase;
-        color: #3a3a3a;
-        letter-spacing: 0.5px;
-        margin-bottom: 10px;
-        display: inline-block;
-        border-bottom: 2px solid #00addb;
-        padding-bottom: 15px;
-        margin-bottom: -2px;
-      }
-    }
-
     .cart-container {
       align-items: flex-start;
       background-color: #ffffff;
