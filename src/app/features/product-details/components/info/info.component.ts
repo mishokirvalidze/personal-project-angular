@@ -38,7 +38,7 @@ export class InfoComponent implements OnInit {
 
   public inputValue = 1;
 
-  addCart(data: IproductCard): void {
+  public addCart(data: IproductCard): void {
     if (this.service.isLoggedIn()) {
       data.quantity = this.inputValue;
       this.addToCart.emit(data);

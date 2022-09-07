@@ -53,8 +53,13 @@
             <div class=" my-account relative">
 
 
-                <span>My account</span>
+                <ng-container *ngIf="name | async as name; else accout">
+                    <span>{{ name }}</span>
+                </ng-container>
 
+                <ng-template #accout>
+                    <span>My account</span>
+                </ng-template>
                 <i class="bi bi-caret-down-fill"></i>
                 <i class="bi bi-caret-up-fill"></i>
 

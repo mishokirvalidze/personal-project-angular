@@ -23,18 +23,24 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
     private cartService: CartService
   ) {}
 
-  private unsubscribe: Subscription = new Subscription();
+  private unsubscribe: Subscription[] = [];
 
   ngOnInit(): void {
-    this.activeRoute.queryParams
-      .pipe(tap((data) => ((this.id = data['id']), (this.path = data['path']))))
-      .subscribe();
+    this.unsubscribe.push(
+      this.activeRoute.queryParams
+        .pipe(
+          tap((data) => ((this.id = data['id']), (this.path = data['path'])))
+        )
+        .subscribe()
+    );
 
     this.getProduct();
   }
 
   ngOnDestroy(): void {
-    this.unsubscribe.unsubscribe();
+    this.unsubscribe.forEach((sub) => {
+      sub.unsubscribe();
+    });
   }
 
   private id = 0;
@@ -74,13 +80,15 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
   public cart(data: IproductCard): void {
     let arr: Icart[] = [];
 
-    this.unsubscribe = this.cartService.cartList
-      .pipe(
-        tap((cartData) => {
-          arr = cartData;
-        })
-      )
-      .subscribe();
+    this.unsubscribe.push(
+      this.cartService.cartList
+        .pipe(
+          tap((cartData) => {
+            arr = cartData;
+          })
+        )
+        .subscribe()
+    );
 
     arr.push(data as Icart);
 

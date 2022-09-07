@@ -15,6 +15,9 @@ export class SharedService {
   private error$ = new BehaviorSubject<string>('');
   public error = this.error$.asObservable();
 
+  private name$ = new BehaviorSubject<string>('');
+  public name = this.name$.asObservable();
+
   private isLoggedIn$ = new BehaviorSubject<boolean>(false);
   public isSignUp = this.isLoggedIn$.asObservable();
 
@@ -23,6 +26,7 @@ export class SharedService {
       .post<ReturnedData>(this.baseUrl + endPoint, data)
       .pipe(
         tap((data) => {
+          localStorage.setItem('name', data.user.name);
           localStorage.setItem('id', data.user.id as unknown as string);
           localStorage.setItem('token', data.accessToken);
           this.router.navigate(['/']);
@@ -39,5 +43,9 @@ export class SharedService {
   public isLoggedIn(): boolean {
     this.isLoggedIn$.next(!!localStorage.getItem('token'));
     return !!localStorage.getItem('token');
+  }
+
+  public getName(): void {
+    this.name$.next(localStorage.getItem('name')!);
   }
 }

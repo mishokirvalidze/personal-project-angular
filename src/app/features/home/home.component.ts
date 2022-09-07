@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.isLoggedIn();
+    this.service.getName();
 
     if (this.service.isLoggedIn()) {
       this.cartService.getCart();

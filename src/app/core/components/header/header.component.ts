@@ -19,6 +19,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.isLoggedIn();
+    this.service.getName();
+    this.name = this.service.name;
     this.isLoggedIn = this.service.isSignUp;
     this.cartNum = this.cartService.numOfProducts;
     if (this.service.isLoggedIn()) this.cartService.getCart();
@@ -28,12 +30,15 @@ export class HeaderComponent implements OnInit {
 
   public cartNum = new Observable<number>();
 
+  public name = new Observable<string>();
+
   public logOut(): void {
     this.cartService.resetCart();
-
+    localStorage.removeItem('name');
     localStorage.removeItem('token');
     localStorage.removeItem('id');
     this.service.isLoggedIn();
+    this.service.getName();
     this.router.navigateByUrl('/login');
   }
 }
