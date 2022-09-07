@@ -5,6 +5,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { SubMenuComponent } from './components/sub-menu/sub-menu.component';
 import { RouterModule } from '@angular/router';
+import { SharedService } from '../shared/service/shared.service';
+import { SharedModule } from '../shared/modules/shared.module';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CompleteComponent } from './components/complete/complete.component';
 
 @NgModule({
   declarations: [
@@ -12,8 +16,11 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     NavigationComponent,
     SubMenuComponent,
+    PageNotFoundComponent,
+    CompleteComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, SharedModule],
   exports: [HeaderComponent, NavigationComponent, FooterComponent],
+  providers: [SharedService],
 })
 export class CoreModule {}
