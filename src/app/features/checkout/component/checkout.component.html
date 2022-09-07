@@ -1,1 +1,107 @@
-<p>checkout works!</p>
+<div class="wrapper">
+    <div class="container">
+        <div class="component-header  flex center">
+            <h2 class="component-header-child">Checkout</h2>
+        </div>
+
+        <div class="checkout-container">
+
+            <div class="inner-container">
+
+                <div class="credit-card-payment">
+                    <form>
+
+                        <div class="card-number">
+                            <h4>
+                                Card Number
+                            </h4>
+                            <div class="flex center">
+                                <input type="text" pattern="\d*" min="1" minlength="12" maxlength="12" required
+                                    placeholder="Enter card number">
+
+                                <div class="img">
+                                    <img src="../../../../assets//images/checkout/credit-card-logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group flex center between">
+                            <div class="month">
+                                <h4>Month</h4>
+                                <select>
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April </option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option selected>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                            </div>
+
+                            <div class="year">
+                                <h4>Year</h4>
+                                <select>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                </select>
+                            </div>
+
+                            <div class="cvv">
+                                <h4>CVV</h4>
+                                <input type="text" pattern="\d*" min="1" minlength="3" maxlength="3" required
+                                    placeholder="CVV">
+                            </div>
+                        </div>
+
+                        <div class="cart">
+
+                            <ng-container *ngIf="subtotal | async as total">
+                                <div class="subtotal">
+                                    <a routerLink="/cart">
+                                        <div class="sub flex center between">
+                                            <h3>Subtotal <span>({{ cartNum | async }} item)</span></h3>
+                                            <span>${{ total }}</span>
+                                        </div>
+
+                                        <div class="vat flex center between">
+                                            <h5>Value Added Tax</h5>
+                                            <span>${{ 18 * total / 100 }}</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="total-amount flex center between">
+                                    <h2>total amount</h2>
+                                    <span>${{ total + (18 * total / 100)}}</span>
+                                </div>
+
+
+                                <button class="btn-primary relative" type="submit" (click)="submit()">
+                                    <span class="btn-primary-child relative">Purchase</span>
+                                </button>
+                            </ng-container>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
