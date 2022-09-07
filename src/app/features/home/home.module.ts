@@ -10,7 +10,9 @@ import { NotebooksComponent } from './components/notebooks/notebooks.component';
 import { SmartphonesComponent } from './components/smartphones/smartphones.component';
 import { CategoryComponent } from './components/category/category.component';
 import { BrandsComponent } from './components/brands/brands.component';
-import { ProductCardModule } from '../../shared/product-card/product-card.module';
+import { ProductCardModule } from '../../shared/modules/product-card/product-card.module';
+import { CategoryDirective } from './components/category/directive/category.directive';
+import { BrandsDirective } from './components/brands/directive/brands.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ProductCardModule } from '../../shared/product-card/product-card.module
     SmartphonesComponent,
     CategoryComponent,
     BrandsComponent,
+    CategoryDirective,
+    BrandsDirective,
   ],
   imports: [CommonModule, HomeRoutingModule, ProductCardModule],
 })
