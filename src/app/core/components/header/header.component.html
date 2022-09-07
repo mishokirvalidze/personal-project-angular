@@ -2,63 +2,86 @@
     <div class="container">
         <div class="top-header flex between">
             <div class="left-side flex">
-                <a class="flex center" href="mailto:megabyte@example.com"><i class="fa-regular fa-envelope"></i>
+                <a class="flex center" href="mailto:megabyte@example.com">
+                    <i class="bi bi-envelope"></i>
                     megabyte@example.com</a>
-                <a class="flex center" href="tel:+0101-010101"><i class="fa-solid fa-phone"></i> 0101-010101</a>
+                <a class="flex center" href="tel:+0101-010101">
+                    <i class="bi bi-telephone"></i> 0101-010101</a>
             </div>
 
             <div class="soc-icons">
-                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+                <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                <a href="https://youtube.com"><i class="bi bi-youtube"></i></a>
 
             </div>
         </div>
 
         <div class="bottom-header flex between center">
             <div class=" logo">
-                <a href="#"><img src="../../../../assets/images/logo/logo.png" alt="logo"></a>
+                <a routerLink="/"><img src="../../../../assets/images/logo/logo.png" alt="logo"></a>
             </div>
 
             <div class="search">
                 <input type="text" name="search" id="" placeholder="Search...">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="bi bi-search"></i>
             </div>
 
             <div class="group-item flex">
                 <div class="relative">
                     <a href="">
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="bi bi-heart"></i>
                     </a>
                     <span class="absolute flex center">0</span>
                 </div>
 
                 <div class=" relative">
-                    <a href="">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <a routerLink="/cart">
+                        <i class="bi bi-cart3"></i>
                     </a>
-                    <span class="absolute flex center">0</span>
+                    <ng-container *ngIf="cartNum | async as num; else zero">
+                        <span class="absolute flex center">{{ num }}</span>
+                    </ng-container>
+
+                    <ng-template #zero>
+                        <span class="absolute flex center">0</span>
+                    </ng-template>
                 </div>
             </div>
 
             <div class=" my-account relative">
 
+
                 <span>My account</span>
 
-                <i class=" fa-solid fa-caret-down"></i>
-                <i class="fa-solid fa-caret-up"></i>
+                <i class="bi bi-caret-down-fill"></i>
+                <i class="bi bi-caret-up-fill"></i>
 
                 <div class="drop-down absolute">
 
                     <ul>
-                        <li class="login">
-                            <a routerLink="/login"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
-                        </li>
 
-                        <li class="register">
-                            <a routerLink="/signup"><i class="fa-solid fa-user-plus"></i> Sign up</a>
-                        </li>
+                        <ng-container *ngIf="isLoggedIn | async; else other">
+                            <li class="logout">
+                                <a (click)="logOut()">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    Log out</a>
+                            </li>
+                        </ng-container>
+
+                        <ng-template #other>
+                            <li class="login">
+                                <a routerLink="/login">
+                                    <i class="bi bi-box-arrow-in-right"></i>
+                                    Login</a>
+                            </li>
+
+                            <li class="register">
+                                <a routerLink="/signup"><i class="bi bi-person"></i> Sign up</a>
+                            </li>
+                        </ng-template>
+
                     </ul>
 
                 </div>

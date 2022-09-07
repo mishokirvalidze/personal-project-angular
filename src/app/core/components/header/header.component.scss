@@ -3,9 +3,7 @@ header {
   background-color: #007999;
 
   .container {
-    max-width: 1300px;
     padding: 10px 30px;
-    margin: auto;
 
     .top-header {
       margin-bottom: 30px;
@@ -85,7 +83,7 @@ header {
             width: 15px;
             height: 15px;
             border-radius: 50%;
-            top: -5px;
+            top: 5px;
             right: -5px;
           }
         }
@@ -107,7 +105,7 @@ header {
           margin-left: 10px;
         }
 
-        .fa-caret-up {
+        .bi-caret-up-fill {
           display: none;
         }
 
@@ -131,6 +129,12 @@ header {
               margin-bottom: 15px;
             }
 
+            .logout {
+              a {
+                cursor: pointer;
+              }
+            }
+
             li {
               a {
                 color: #3a3a3a;
@@ -138,9 +142,10 @@ header {
                 i {
                   margin-right: 5px;
                   color: #00addb;
+                  font-size: 18px;
                 }
 
-                .fa-arrow-right-to-bracket {
+                .bi-box-arrow-right {
                   margin-right: 8px;
                 }
               }
@@ -169,11 +174,11 @@ header {
             display: block;
           }
 
-          .fa-caret-up {
+          .bi-caret-up-fill {
             display: inline-block;
           }
 
-          .fa-caret-down {
+          .bi-caret-down-fill {
             display: none;
           }
         }
