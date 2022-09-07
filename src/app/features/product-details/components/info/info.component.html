@@ -1,0 +1,78 @@
+<div class="container">
+    <h3>
+        {{data.name}}
+    </h3>
+
+    <div class="rate flex between center">
+        <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+        </div>
+
+        <span>
+            instock
+        </span>
+    </div>
+
+    <div class="price flex">
+        <span>${{data.price}}</span>
+
+        <ng-container *ngIf="data.offer">
+            <div class="offer flex">
+                <span>{{data.offer}}% OFF</span>
+                <span>${{data.oldPrice}}</span>
+            </div>
+        </ng-container>
+    </div>
+
+    <p class="description">
+        {{ data.smallDesc }}
+    </p>
+
+    <div class="color flex center">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+    </div>
+
+    <div class="cart flex ceter">
+        <form #form="ngForm">
+            <input type="number" value="1" min="1" name="input" onkeydown="return false" [(ngModel)]="inputValue">
+        </form>
+
+        <button class="btn-primary relative">
+            <span class="btn-primary-child relative">
+                <a (click)="addCart(data)">
+                    <i class="bi bi-cart3"></i>
+                    ADD TO CART
+                </a>
+            </span>
+        </button>
+
+        <div class="heart">
+            <i class="bi bi-heart"></i>
+        </div>
+
+    </div>
+    <div class="share flex center">
+        <h4>Share:</h4>
+        <a href="https://facebook.com">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com">
+            <i class="bi bi-twitter"></i>
+
+        </a>
+        <a href="https://whatsapp.com">
+            <i class="bi bi-whatsapp"></i>
+
+        </a>
+        <a href="">
+            <i class="bi bi-link-45deg"></i>
+        </a>
+    </div>
+</div>
