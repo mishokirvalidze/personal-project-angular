@@ -4,7 +4,7 @@
             <div class="carousel-container relative">
                 <ng-container *ngFor="let img of images; let i = index">
 
-                    <img class="animation" [src]="img.imgSrc" [alt]="img.imgAlt"
+                    <img class="animation" [src]="img.imgSrc" [alt]="img.alt"
                         [ngClass]="{'active': (currentIndex$ | async) === i}">
 
                 </ng-container>
@@ -19,10 +19,10 @@
 
 
                 <div class="btn prev absolute flex center" (click)="onPrevClick()">
-                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="bi bi-chevron-left"></i>
                 </div>
                 <div class="btn next absolute flex center" (click)="onNextClick()">
-                    <i class="fa-solid fa-angle-right"></i>
+                    <i class="bi bi-chevron-right"></i>
                 </div>
 
             </div>
@@ -38,7 +38,11 @@
         <div class="text absolute">
             <h3>ARMED PC GAMER</h3>
             <p>Choose your pc and play!</p>
-            <a class="relative" href=""><span class="relative">Shop now</span></a>
+            <a class="btn-primary relative" routerLink="/desktop">
+                <span class="btn-primary-child relative">
+                    Shop now
+                </span>
+            </a>
         </div>
     </div>
 </div>

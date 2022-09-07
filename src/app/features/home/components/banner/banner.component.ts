@@ -6,6 +6,7 @@ import {
 } from '@angular/core';
 import { Icarousel } from '../../model/home.model';
 import { BehaviorSubject } from 'rxjs';
+import { OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
@@ -13,13 +14,19 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./banner.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BannerComponent implements OnInit {
+export class BannerComponent implements OnInit, OnDestroy {
   constructor() {}
 
+  interval: NodeJS.Timer | undefined;
+
   ngOnInit(): void {
-    setInterval(() => {
+    this.interval = setInterval(() => {
       this.onNextClick();
     }, 3000);
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.interval);
   }
 
   @Input() images: Icarousel[] = [];

@@ -75,6 +75,7 @@
         visibility: hidden;
 
         transition: all 0.3s ease;
+
         &:hover {
           background-color: #00addb;
         }
@@ -134,38 +135,8 @@
 
       a {
         color: #ffffff;
-        padding: 10px;
-        background-color: #00addb;
-        border-radius: 10px;
+        font-size: 16px;
         font-weight: 300;
-
-        span {
-          z-index: 4;
-        }
-
-        &::after {
-          position: absolute;
-          content: "";
-          top: 50%;
-          left: 50%;
-          width: 0;
-          height: 0;
-          border-radius: 10px;
-          background-color: #40c2e4;
-          transition-property: all;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-duration: 0.3s;
-        }
-
-        &:hover {
-          &::after {
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 3;
-          }
-        }
       }
     }
 
