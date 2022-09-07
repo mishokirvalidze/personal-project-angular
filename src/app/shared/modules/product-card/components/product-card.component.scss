@@ -5,6 +5,7 @@
 
   .card-container {
     max-width: 300px;
+    width: 300px;
     padding: 10px 20px;
     margin: auto;
     background-color: #ffffff;
@@ -31,7 +32,7 @@
     .eye {
       right: 10px;
       background-color: #0000004d;
-      padding: 10px;
+      padding: 5px 10px;
       font-size: 20px;
       border-radius: 8px;
       cursor: pointer;
@@ -151,49 +152,15 @@
       }
     }
 
-    button {
+    .btn-primary {
       width: 100%;
       text-align: center;
-      background-color: #00addb;
-      border: none;
-      outline: none;
-      border-radius: 10px;
       padding: 10px 0;
-      text-transform: capitalize;
-      font-size: 18px;
-      cursor: pointer;
       margin-bottom: 10px;
 
-      span {
-        z-index: 4;
-
+      .btn-primary-child {
         a {
           display: block;
-          color: #ffffff;
-        }
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        top: 50%;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border-radius: 10px;
-        background-color: #40c2e4;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 0.3s;
-      }
-
-      &:hover {
-        &::after {
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          z-index: 3;
         }
       }
     }

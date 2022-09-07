@@ -26,6 +26,8 @@ export class ProductCardComponent implements OnInit {
     path: '',
     offer: 0,
     description: [],
+    quantity: 0,
+    brand: '',
   };
 
   ngOnInit(): void {}
