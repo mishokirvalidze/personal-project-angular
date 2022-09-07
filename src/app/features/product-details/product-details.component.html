@@ -1,0 +1,31 @@
+<div class="wrapper">
+
+
+    <ng-container *ngIf="productData | async as data">
+        <ng-container *ngIf="data && data.name">
+            <div class="container flex between">
+                <div class="gallery">
+
+                    <app-gallery [imgs]="data.imgs"></app-gallery>
+
+                </div>
+
+                <div class="info">
+
+                    <app-info [data]="data" (addToCart)="cart($event)"></app-info>
+
+                </div>
+
+            </div>
+
+
+            <div class="description">
+
+                <app-description [description]="data.description"></app-description>
+
+            </div>
+        </ng-container>
+
+    </ng-container>
+
+</div>
