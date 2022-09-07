@@ -1,0 +1,33 @@
+.container {
+  .header {
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    h2 {
+      color: #3a3a3a;
+      display: inline-block;
+      border-bottom: 2px solid #00addb;
+      padding: 10px;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 3px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+
+    tr {
+      td {
+        width: 50%;
+        text-align: left;
+        padding: 10px 20px;
+      }
+    }
+
+    tr:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+  }
+}
