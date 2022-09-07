@@ -1,1 +1,86 @@
-<p>login works!</p>
+<div class="wrapper">
+    <div class="container flex center">
+        <h1><img src="../../../assets/images/logo/logo2.png" alt="logo"></h1>
+
+        <ng-container *ngIf="errors | async as error">
+            <ng-container *ngIf="error === 'Cannot find user'; else other">
+                <p class="http-error">
+                    {{ error }}
+                    please
+                    <a routerLink="/signup">
+                        Register
+                    </a>
+                </p>
+            </ng-container>
+
+            <ng-template #other>
+                <ng-container *ngIf="error == '[object ProgressEvent]'; else second">
+                    <p class="http-error">Server error</p>
+                </ng-container>
+                <ng-template #second>
+                    <p class="http-error">{{ error }}</p>
+
+                </ng-template>
+
+            </ng-template>
+
+        </ng-container>
+
+        <form [formGroup]="loginForm" (ngSubmit)="submit()" class="flex">
+
+            <div class="email" [ngClass]=" {'invalid': email.touched && email.errors}">
+                <i class="bi bi-envelope"></i>
+                <input formControlName="email" type="email" placeholder="Enter email">
+            </div>
+
+            <ng-container *ngIf="email.touched && email.errors">
+                <p class="error" *ngIf="email.errors['required']">email is required</p>
+                <p class="error" *ngIf="email.errors['email']">incorrect email format</p>
+            </ng-container>
+
+            <div class="password" [ngClass]=" {'invalid': password.touched && password.errors}">
+                <i class="bi bi-lock"></i>
+                <input formControlName="password" type="password" placeholder="Enter password">
+            </div>
+
+            <ng-container *ngIf="password.touched && password.errors">
+                <p class="error" *ngIf="password.errors['required']">password is required</p>
+            </ng-container>
+
+            <button [disabled]="loginForm.invalid" type="submit" class="btn-primary login relative">
+                <span class="btn-primary-child relative">login</span>
+            </button>
+        </form>
+
+        <p class="or relative">or</p>
+
+        <div class="soc-icons flex center">
+            <div class="facebook">
+                <a href="https://facebook.com">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="https://twitter.com">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+            <div class="google">
+                <a href="https://google.com">
+                    <i class="bi bi-google"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <p>Don't have an account?</p>
+
+
+        <button class="btn-primary relative">
+            <span class="btn-primary-child relative">
+                <a routerLink="/signup">Create one</a>
+            </span>
+        </button>
+
+    </div>
+</div>
