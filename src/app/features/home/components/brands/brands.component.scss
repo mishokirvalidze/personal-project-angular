@@ -1,0 +1,59 @@
+.container {
+  padding: 30px;
+
+  .brands-imgs {
+    overflow: hidden;
+
+    img {
+      max-width: 150px;
+      width: 150px;
+      margin-right: 30px;
+      transition: all 0.3 ease-in;
+      transform-origin: right;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+
+  .btn {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    margin: 0 40px;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    background-color: #0000004d;
+    z-index: 20;
+    border-radius: 5px;
+    font-size: 25px;
+    box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+    cursor: pointer;
+
+    visibility: hidden;
+
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #00addb;
+    }
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  &:hover {
+    .btn {
+      visibility: visible;
+    }
+  }
+}

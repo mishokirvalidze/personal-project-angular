@@ -1,0 +1,17 @@
+<div class="container relative">
+
+    <div class="brands-imgs flex center">
+        <ng-container *ngFor="let img of imgData">
+            <img [src]="img.imgSrc" [alt]="img.alt">
+        </ng-container>
+
+    </div>
+
+    <div class="btn prev absolute flex center" appBrands>
+        <i class="bi bi-chevron-left"></i>
+    </div>
+
+    <div class="btn next absolute flex center" appBrands>
+        <i class="bi bi-chevron-right"></i>
+    </div>
+</div>
