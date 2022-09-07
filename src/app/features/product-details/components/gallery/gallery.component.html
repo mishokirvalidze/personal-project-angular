@@ -1,0 +1,18 @@
+<div class="container relative">
+    <div class="main-img flex center">
+        <img [src]="imgs[0]" alt="" id="preview">
+    </div>
+
+
+    <div class="img-container flex center between">
+
+        <ng-container *ngFor="let img of imgs">
+            <div class="img-slide">
+                <img [src]="img" alt="" appGallery>
+            </div>
+        </ng-container>
+
+    </div>
+
+
+</div>
