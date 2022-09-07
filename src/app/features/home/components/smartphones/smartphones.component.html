@@ -1,0 +1,43 @@
+<div class="container ">
+
+    <div class="component-header flex center">
+        <h2 class="component-header-child">Smartphones</h2>
+    </div>
+
+    <ng-container *ngIf="cards | async as cards; ">
+        <ng-container *ngIf="cards && cards.length > 0; else other">
+
+            <div class="inner-container flex center between">
+                <div class="left-banner relative">
+                    <div class="overlay absolute"></div>
+
+                    <img src="../../../assets/images/bg/smartphone_bg.jpg" alt="banner">
+
+                    <div class="text absolute">
+                        <h3>SMARTPHONES</h3>
+                        <p>Choose your smartphone now!</p>
+                        <a class="btn-primary relative" routerLink="/smartphone">
+                            <span class="btn-primary-child relative">Show more</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="smartphone-container flex center between">
+
+                    <ng-container *ngFor="let card of cards">
+
+                        <app-product-card [card]="card"></app-product-card>
+
+                    </ng-container>
+
+
+                </div>
+            </div>
+
+        </ng-container>
+    </ng-container>
+
+    <ng-template #other>
+        <p class="error">Product not foud please check server</p>
+    </ng-template>
+</div>
