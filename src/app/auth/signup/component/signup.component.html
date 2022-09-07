@@ -1,0 +1,113 @@
+<div class="wrapper">
+    <div class="container flex center">
+        <h1><img src="../../../assets/images/logo/logo2.png" alt="logo"></h1>
+
+        <form [formGroup]="signUpForm" (ngSubmit)="submit()" class="flex">
+
+            <div class="input-wrapper" [ngClass]="{'invalid': name.touched && name.errors}">
+                <i class="bi bi-person"></i>
+                <input formControlName="name" type="text" placeholder="Enter Name">
+            </div>
+            <ng-container *ngIf="name.touched && name.errors">
+                <p class="error" *ngIf="name.errors['required']">name is required</p>
+                <p class="error" *ngIf="name.errors['minlength']">name should be at least 2 letters</p>
+                <p class="error" *ngIf="name.errors['pattern']">name must contain only letters</p>
+
+            </ng-container>
+
+            <div class="input-wrapper" [ngClass]="{'invalid': email.touched && email.errors}">
+                <i class="bi bi-envelope"></i>
+                <input formControlName="email" type="email" placeholder="Enter email">
+            </div>
+
+            <ng-container *ngIf="email.touched && email.errors">
+                <p class="error" *ngIf="email.errors['required']">email is required</p>
+                <p class="error" *ngIf="email.errors['email']">incorrect email format</p>
+            </ng-container>
+
+            <ng-container formGroupName="passwordGroup">
+                <div class="input-wrapper" [ngClass]="{'invalid': password.touched && password.errors}">
+                    <i class="bi bi-lock"></i>
+                    <input formControlName="password" type="password" placeholder="Enter password">
+                </div>
+
+                <ng-container *ngIf="password.touched && password.errors">
+                    <p class="error" *ngIf="password.errors['required']">password is required</p>
+                    <p class="error" *ngIf="password.errors['minlength']">password should be at least 7 letters</p>
+                </ng-container>
+
+                <div class="input-wrapper"
+                    [ngClass]="{'invalid': (confirmPassword.touched && confirmPassword.errors) || (passwordGroup.touched && passwordGroup.errors)}">
+                    <i class="bi bi-lock"></i>
+                    <input formControlName="confirmPassword" type="password" placeholder="Confirm password">
+                </div>
+
+                <ng-container
+                    *ngIf="(confirmPassword.touched && confirmPassword.errors) || (passwordGroup.touched && passwordGroup.errors)">
+                    <p class="error"
+                        *ngIf="confirmPassword.touched && confirmPassword.errors && confirmPassword.errors['required']">
+                        this field is
+                        required</p>
+                    <p class="error"
+                        *ngIf="confirmPassword.touched && passwordGroup.errors && passwordGroup.errors['mismatch']">
+                        passwords do not match</p>
+                </ng-container>
+            </ng-container>
+
+            <div class="input-wrapper terms">
+                <input formControlName="check" type="checkbox" id="check">
+                <label for="check">
+                    I agree with all
+                    <a href="#">Terms of Use</a>
+                    &amp;
+                    <a href="#">Privacy Policy</a>
+                </label>
+            </div>
+
+            <ng-container *ngIf="errors | async as error">
+                <p class="http-error">
+                    {{error}}
+                    please
+                    <a routerLink="/login">
+                        Log in
+                    </a>
+                </p>
+            </ng-container>
+
+            <button [disabled]="signUpForm.invalid" type="submit" class="btn-primary login relative">
+                <span class="btn-primary-child relative">Sign up</span>
+            </button>
+        </form>
+
+        <p class="or relative">or</p>
+
+        <div class="soc-icons flex center">
+            <div class="facebook">
+                <a href="https://facebook.com">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="https://twitter.com">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+            <div class="google">
+                <a href="https://google.com">
+                    <i class="bi bi-google"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <p>Do you already have an account?</p>
+
+
+        <button class="btn-primary relative">
+            <span class="btn-primary-child relative">
+                <a routerLink="/login">Login</a>
+            </span>
+        </button>
+
+    </div>
+</div>
