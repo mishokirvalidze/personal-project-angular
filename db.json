@@ -1,3 +1,899 @@
 {
-  "users": []
+  "users": [],
+  "offers": [
+    {
+      "id": 1,
+      "path": "offers",
+      "name": "Moto e7i Power",
+      "offer": 20,
+      "price": 160,
+      "oldPrice": 200,
+      "smallDesc": "Motorola E7i Power Dual-SIM 32GB ROM + 2GB RAM (GSM Only | No CDMA) 4G/LTE Smartphone (Tahiti Blue) - International Version",
+      "imgs": [
+        "/offers/phone_1.jpg",
+        "/offers/phone_2.jpg",
+        "/offers/phone_3.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "moto"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "path": "offers",
+      "name": "Apple MacBook Air",
+      "offer": 20,
+      "price": 1000,
+      "oldPrice": 1200,
+      "smallDesc": "Apple MacBook Air with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray (Latest Model)",
+      "imgs": [
+        "/offers/note_1.jpg",
+        "/offers/note_2.jpg",
+        "/offers/note_3.jpg"
+      ],
+      "alt": "mackbook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Apple"
+        },
+        {
+          "key": "screen size",
+          "value": "13.3"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Apple M1"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "macOS"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "path": "offers",
+      "name": "PlayStation 5",
+      "offer": 20,
+      "price": 400,
+      "oldPrice": 480,
+      "smallDesc": "PlayStation 5 - SUMMER BUNDLE ( PS5 + 2 controller)",
+      "imgs": [
+        "/offers/consoles.jpg",
+        "/offers/consoles_2.jpg",
+        "/offers/consoles_3.jpg"
+      ],
+      "alt": "console",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Sony"
+        },
+        {
+          "key": "GPU",
+          "value": "Ray Tracing Acceleration Up to 2.23 GHz (10.3 TFLOPS), AMD Radeon RDNA 2-based graphics engine"
+        },
+        {
+          "key": "Processor",
+          "value": "x86-64-AMD Ryzen Zen 8 Cores"
+        },
+        {
+          "key": "RAM",
+          "value": "16GB GDDR6/256-bit"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "Custom 825GB SSD"
+        },
+        {
+          "key": "Optical reader",
+          "value": "Ultra HD Blu-ray, BD-ROM (25G/50G), BD-R/RE (25G/50G), DVD"
+        },
+        {
+          "key": "Bluetooth",
+          "value": "Bluetooth 5.1"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "path": "offers",
+      "name": "Logitech G403",
+      "offer": 20,
+      "price": 20,
+      "oldPrice": 24,
+      "smallDesc": "Logitech G403 Hero Prodigy Wired Programmable Gaming Mouse",
+      "imgs": [
+        "/offers/mouse.jpg",
+        "/offers/mouse_2.jpg",
+        "/offers/mouse_3.jpg"
+      ],
+      "alt": "mouse",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Logitech"
+        },
+        {
+          "key": "Type",
+          "value": "Gaming"
+        },
+        {
+          "key": "Size",
+          "value": "125x63.5x40 mm"
+        },
+        {
+          "key": "Optical sensor:",
+          "value": "1200-1800-2400-3600 DPI"
+        }
+      ]
+    }
+  ],
+  "desktop": [
+    {
+      "id": 1,
+      "path": "desktop",
+      "name": "Dell Vostro 3888 Desktop",
+      "brand": "dell",
+      "price": 699,
+      "smallDesc": "Dell Vostro 3888 Desktop, Intel Core i5-10400 Upto 4.3GHz, 16GB RAM, 512GB SSD, DVDRW, HDMI, VGA, Windows 10 Pro",
+      "imgs": [
+        "/desktop/5_1.jpg",
+        "/desktop/5_2.jpg",
+        "/desktop/5_3.jpg",
+        "/desktop/5_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Dell"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i5 10th Gen"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "Intel UHD Graphics 630"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "path": "desktop",
+      "name": "ABS Master Gaming PC",
+      "price": 1499,
+      "brand": "abs",
+      "smallDesc": "ABS Master Gaming PC - Intel i7 12700F - GeForce RTX 3060 Ti - 16GB DDR4 3200MHz - 1TB M.2 NVMe SSD",
+      "imgs": [
+        "/desktop/6_1.jpg",
+        "/desktop/6_2.jpg",
+        "/desktop/6_3.jpg",
+        "/desktop/6_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ABS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i5 10th Gen"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "Intel UHD Graphics 630"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "path": "desktop",
+      "name": "ABS Master Gaming PC",
+      "price": 1249,
+      "brand": "abs",
+      "smallDesc": "ABS Master Gaming PC - Intel i7 10700F - GeForce RTX 3060 - 16GB (2x8GB) DDR4 3200MHz - 1TB M.2 NVMe SSD",
+      "imgs": [
+        "/desktop/7_1.jpg",
+        "/desktop/7_2.jpg",
+        "/desktop/7_3.jpg",
+        "/desktop/7_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ABS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i5 10th Gen"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "Intel UHD Graphics 630"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "path": "desktop",
+      "name": "ABS Master Gaming PC",
+      "price": 1099,
+      "brand": "abs",
+      "smallDesc": "ABS Master Gaming PC - Intel i5 10400F - GeForce RTX 3060 - 16GB DDR4 3000MHz - 512GB SSD",
+      "imgs": [
+        "/desktop/8_1.jpg",
+        "/desktop/8_2.jpg",
+        "/desktop/8_3.jpg",
+        "/desktop/8_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ABS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i5 10th Gen"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "Intel UHD Graphics 630"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    }
+  ],
+  "notebook": [
+    {
+      "id": 1,
+      "path": "notebook",
+      "name": "ASUS VivoBook Pro",
+      "price": 1199,
+      "brand": "asus",
+      "smallDesc": "ASUS VivoBook Pro 16X OLED Laptop, 16 WQUXGA 16:10 Display, Intel Core i7-11370H CPU, NVIDIA GeForce RTX 3050, 16GB RAM, 1TB SSD, Windows 11 Pro, DialPad, Comet Grey, N7600PC-NB74",
+      "imgs": ["/notebook/1_1.jpg", "/notebook/1_2.jpg", "/notebook/1_3.jpg"],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ASUS"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Apple M1"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "path": "notebook",
+      "name": "ASUS VivoBook ",
+      "price": 700,
+      "brand": "asus",
+      "smallDesc": "ASUS Laptop VivoBook R565EA-US31T Intel Core i3 11th Gen 1115G4 (3.00GHz) 4GB Memory 128 GB PCIe SSD Intel UHD Graphics 15.6 Touchscreen Windows 11 in S mode",
+      "imgs": ["/notebook/2_1.jpg", "/notebook/2_2.jpg", "/notebook/2_3.jpg"],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ASUS"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Apple M1"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "path": "notebook",
+      "name": "ASUS VivoBook",
+      "price": 579,
+      "brand": "asus",
+      "smallDesc": "ASUS VivoBook 15 F515 Thin and Light Laptop, 15.6 FHD Display, Core i7-1165G7 Processor, Iris Xe Graphics, 8GB DDR4 RAM, 512GB SSD, Fingerprint, Windows 11 Home, Slate Grey, F515EA-DH75",
+      "imgs": ["/notebook/3_1.jpg", "/notebook/3_2.jpg", "/notebook/3_3.jpg"],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ASUS"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Apple M1"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "path": "notebook",
+      "name": "ASUS ZenBook 14X",
+      "price": 1099,
+      "brand": "asus",
+      "smallDesc": "ASUS ZenBook 14X OLED Laptop, 14 WQXGA+ 16:10 Touch Display, Intel Core i7-1165G7 CPU, NVIDIA GeForce MX450, 16GB RAM, 512GB SSD, Windows 11 Pro, Pine Grey, UX5400EG-XB73T",
+      "imgs": ["/notebook/4_1.jpg", "/notebook/4_2.jpg", "/notebook/4_3.jpg"],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ASUS"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Apple M1"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    }
+  ],
+  "smartphone": [
+    {
+      "id": 1,
+      "path": "smartphone",
+      "name": "Samsung Galaxy S20 FE",
+      "price": 400,
+      "brand": "samsung",
+      "smallDesc": "Samsung Galaxy S20 FE 5G | 12+128 GB | Android Cell Phone | US Version Smartphone | Pro-Grade Camera, 30X Space Zoom, Night Mode | Cloud Blue",
+      "imgs": [
+        "/smartphone/1_1.jpg",
+        "/smartphone/1_2.jpg",
+        "/smartphone/1_3.jpg",
+        "/smartphone/1_4.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Samsung"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "path": "smartphone",
+      "name": "Samsung Galaxy Z Fold 3",
+      "price": 1799,
+      "brand": "samsung",
+      "smallDesc": "Samsung Galaxy Z Fold 3 5G 256GB - Phantom Black",
+      "imgs": [
+        "/smartphone/2_1.jpg",
+        "/smartphone/2_2.jpg",
+        "/smartphone/2_3.jpg",
+        "/smartphone/2_4.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Samsung"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "path": "smartphone",
+      "name": "Samsung Galaxy S10+ Plus",
+      "price": 350,
+      "brand": "samsung",
+      "smallDesc": "Samsung Galaxy S10+ Plus 128GB SM-G975U1 GSM + CDMA 4G LTE 6.4 in Dynamic AMOLED Display 8GB RAM Smartphone - Prism Black",
+      "imgs": [
+        "/smartphone/3_1.jpg",
+        "/smartphone/3_2.jpg",
+        "/smartphone/3_3.jpg",
+        "/smartphone/3_4.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Samsung"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "path": "smartphone",
+      "name": "Samsung Galaxy S22 Ultra",
+      "price": 800,
+      "brand": "samsung",
+      "smallDesc": "Samsung Galaxy S22 Ultra 5G S908E/DS 12/256 Phantom Black",
+      "imgs": [
+        "/smartphone/4_1.jpg",
+        "/smartphone/4_2.jpg",
+        "/smartphone/4_3.jpg",
+        "/smartphone/4_4.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Samsung"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    }
+  ]
 }
