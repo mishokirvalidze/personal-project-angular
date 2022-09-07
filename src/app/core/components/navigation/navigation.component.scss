@@ -7,21 +7,19 @@ nav {
 }
 
 .container {
-  max-width: 1300px;
   padding: 15px 30px;
-  margin: auto;
 
   .nav-list {
     .products {
       > a {
-        color: #1a1a1a;
+        color: #4d4d4d;
         font-weight: 700;
 
         i {
           color: #00addb;
         }
 
-        .fa-caret-up {
+        .bi-caret-up-fill {
           display: none;
         }
       }
@@ -44,12 +42,12 @@ nav {
           display: block;
         }
 
-        .fa-caret-down {
+        .bi-caret-down-fill {
           display: none;
         }
 
         > a {
-          .fa-caret-up {
+          .bi-caret-up-fill {
             display: inline;
           }
         }
