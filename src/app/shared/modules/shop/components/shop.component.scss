@@ -1,0 +1,141 @@
+.wrapper {
+  padding: 50px 40px 20px;
+  align-items: flex-start;
+
+  .filter {
+    width: 22%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 20px 20px;
+
+    h2 {
+      font-size: 20px;
+      color: #3a3a3a;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #cfcfcf;
+      margin-bottom: 40px;
+      i {
+        font-size: 18px;
+      }
+    }
+
+    form {
+      .brands {
+        margin-bottom: 20px;
+        .brand {
+          input {
+            margin-right: 15px;
+            width: 20px;
+            height: 20px;
+          }
+
+          label {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .price-rage {
+        width: 100%;
+
+        input {
+          width: 38%;
+          padding: 10px;
+          border-radius: 7px;
+          outline: none;
+          border: 2px solid #cfcfcf;
+          font-size: 16px;
+
+          &:focus {
+            border: 2px solid #00addb;
+          }
+        }
+
+        span {
+          font-size: 55px;
+          font-weight: 200;
+          color: #3a3a3a;
+        }
+      }
+
+      .btn-primary {
+        width: 100%;
+
+        .btn-primary-child {
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+      }
+
+      .btn-primary:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .products-container {
+    width: 77%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .inner {
+      width: 98%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+
+      .search {
+        width: 70%;
+        border: 2px solid #cfcfcf;
+        border-radius: 7px;
+        padding: 0 10px;
+
+        form {
+          i {
+            font-size: 18px;
+            color: #3a3a3a;
+            cursor: pointer;
+          }
+
+          input {
+            width: 95%;
+            padding: 10px;
+            border-radius: 7px;
+            outline: none;
+            background: none;
+            border: none;
+            font-size: 17px;
+          }
+        }
+      }
+
+      .order {
+        select {
+          outline: none;
+          padding: 10px;
+          font-size: 16px;
+          border-radius: 5px;
+
+          &:focus {
+            border-color: #00addb;
+          }
+        }
+      }
+    }
+
+    .products {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      .not-found {
+        margin: auto;
+        margin-top: 30px;
+        color: red;
+        font-size: 18px;
+      }
+    }
+  }
+}

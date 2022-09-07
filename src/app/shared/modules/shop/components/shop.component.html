@@ -1,0 +1,93 @@
+<div class="wrapper flex between">
+
+    <div class="filter">
+        <h2>
+            <i class="bi bi-funnel"></i>
+            SEARCH FILTER
+        </h2>
+
+        <form [formGroup]="filterForm" (ngSubmit)="filter()">
+            <div class="brands">
+
+                <div class="brand flex center">
+                    <input formControlName="apple" type="checkbox" id="apple">
+                    <label for="apple">Apple</label>
+                </div>
+
+                <div class="brand flex center">
+                    <input formControlName="asus" type="checkbox" id="asus">
+                    <label for="asus">Asus</label>
+                </div>
+
+                <div class="brand flex center">
+                    <input formControlName="samsung" type="checkbox" id="samsung">
+                    <label for="samsung">Samsung</label>
+                </div>
+
+                <div class="brand flex center">
+                    <input formControlName="dell" type="checkbox" id="dell">
+                    <label for="dell">Dell</label>
+                </div>
+
+                <div class="brand flex center">
+                    <input formControlName="acer" type="checkbox" id="acer">
+                    <label for="acer">Acer</label>
+                </div>
+
+            </div>
+            <div class="price-rage flex center between">
+                <input formControlName="min" type="number" placeholder="min">
+                <span>-</span>
+                <input formControlName="max" type="number" placeholder="max">
+            </div>
+
+            <button type="submit" class="btn-primary relative">
+                <span class="btn-primary-child relative">
+                    Filter
+                </span>
+            </button>
+
+            <button type="reset" class="btn-primary relative" (click)="reset()">
+                <span class="btn-primary-child relative">
+                    Reset
+                </span>
+            </button>
+        </form>
+
+
+
+    </div>
+    <div class="products-container flex ">
+        <div class="inner flex center">
+            <div class="search">
+                <form [formGroup]="form" class="flex center">
+                    <input formControlName="search" type="text" placeholder="Search">
+                    <i class="bi bi-search"></i>
+                </form>
+            </div>
+            <div class="order">
+                <form>
+                    <select (change)="select($event)">
+                        <option value="default">Default</option>
+                        <option value="lower-price">Price(Low > High)</option>
+                        <option value="higher-price">Price(High > Low)</option>
+                        <option value="name-a">Name(A - Z)</option>
+                        <option value="name-z">Name(Z - A)</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="products flex center">
+            <ng-container *ngIf="products && products.length > 0; else other">
+                <ng-container *ngFor="let product of products">
+                    <app-product-card [card]="product"></app-product-card>
+                </ng-container>
+            </ng-container>
+
+            <ng-template #other>
+                <p class="not-found">Product not found</p>
+            </ng-template>
+        </div>
+    </div>
+
+</div>
