@@ -1,0 +1,22 @@
+<div class="component-header  flex center">
+    <h2 class="component-header-child">offers</h2>
+</div>
+
+<div class="offers-container flex center between">
+    <ng-container *ngIf="cards | async as cards; ">
+        <ng-container *ngIf="cards && cards.length > 0; else other">
+
+            <ng-container *ngFor="let card of cards">
+
+                <app-product-card [card]="card"></app-product-card>
+
+            </ng-container>
+
+        </ng-container>
+    </ng-container>
+
+    <ng-template #other>
+        <p class="error">Product not foud please check server</p>
+    </ng-template>
+
+</div>
