@@ -79,6 +79,16 @@ const routes: Routes = [
     loadChildren: () =>
       import('./features/contact/contact.module').then((m) => m.ContactModule),
   },
+
+  {
+    path: 'wishlist',
+    loadChildren: () =>
+      import('./features/wishlist/wishlist.module').then(
+        (m) => m.WishlistModule
+      ),
+    canActivate: [AuthGuard],
+    canLoad: [AuthGuard],
+  },
   {
     path: 'complete',
     component: CompleteComponent,
