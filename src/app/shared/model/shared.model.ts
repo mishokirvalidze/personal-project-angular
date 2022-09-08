@@ -6,6 +6,7 @@ export interface Ilogin {
 export interface Iregister extends Ilogin {
   name: string;
   cart: IproductCard[];
+  wishlist: IproductCard[];
 }
 
 export interface ReturnedData {

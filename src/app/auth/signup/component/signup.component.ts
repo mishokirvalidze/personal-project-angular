@@ -42,6 +42,7 @@ export class SignupComponent implements OnInit, OnDestroy {
     password: '',
     name: '',
     cart: [],
+    wishlist: [],
   });
 
   signUpForm = new FormGroup<IsignUpForm>({
@@ -83,6 +84,7 @@ export class SignupComponent implements OnInit, OnDestroy {
       password: this.signUpForm.controls.passwordGroup.value.password as string,
       name: this.signUpForm.controls.name.value,
       cart: [],
+      wishlist: [],
     });
 
     this.formData$

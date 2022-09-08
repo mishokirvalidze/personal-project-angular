@@ -2,41 +2,43 @@
   padding: 20px;
 
   .contact-info {
-    .item {
-      padding: 10px 30px 10px 20px;
-      border-radius: 10px;
-      background-color: #ffffff;
+    .container {
+      .item {
+        padding: 10px 30px 10px 20px;
+        border-radius: 10px;
+        background-color: #ffffff;
 
-      .icon {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        border: 1px solid #dbdbdb;
-        justify-content: center;
-        margin-right: 10px;
+        .icon {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          border: 1px solid #dbdbdb;
+          justify-content: center;
+          margin-right: 10px;
 
-        i {
-          font-size: 40px;
-          color: #00addb;
-        }
-      }
-
-      .txt {
-        h4 {
-          font-weight: 700;
-          color: #3a3a3a;
+          i {
+            font-size: 40px;
+            color: #00addb;
+          }
         }
 
-        p {
-          font-size: 14px;
-          font-weight: 300;
-          color: #acaaaa;
-        }
-      }
+        .txt {
+          h4 {
+            font-weight: 700;
+            color: #3a3a3a;
+          }
 
-      &:hover {
-        box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
-          0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+          p {
+            font-size: 14px;
+            font-weight: 300;
+            color: #acaaaa;
+          }
+        }
+
+        &:hover {
+          box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+            0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+        }
       }
     }
   }

@@ -10,6 +10,7 @@ import { tap, BehaviorSubject, map, Subscription } from 'rxjs';
 import { IproductCard, Icart } from '../../shared/model/shared.model';
 import { CartService } from '../../shared/service/cart.service';
 import { WishlistService } from '../../shared/service/wishlist.service';
+import { SharedService } from '../../shared/service/shared.service';
 
 @Component({
   selector: 'app-product-details',
@@ -22,7 +23,8 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
     private http: HttpClient,
     private activeRoute: ActivatedRoute,
     private cartService: CartService,
-    private wishlistService: WishlistService
+    private wishlistService: WishlistService,
+    private service: SharedService
   ) {}
 
   private unsubscribe: Subscription[] = [];
@@ -57,14 +59,16 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
         .subscribe()
     );
 
-    this.wishlistService.getWishlist();
-    this.wishlistService.wishlist.forEach((items) => {
-      items.forEach((item) => {
-        if (item.id === Number(this.id) && item.path === this.path) {
-          this.wishlist = true;
-        }
+    if (this.service.isLoggedIn()) {
+      this.wishlistService.getWishlist();
+      this.wishlistService.wishlist.forEach((items) => {
+        items.forEach((item) => {
+          if (item.id === Number(this.id) && item.path === this.path) {
+            this.wishlist = true;
+          }
+        });
       });
-    });
+    }
 
     this.getProduct();
   }

@@ -1,5 +1,14 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "misho@mail.com",
+      "password": "$2a$10$UIULE9j/wdRJ.6oOLs/xDOjpSGZtLTdcyMDTxhL2dVtFQXu6/abe.",
+      "name": "misho",
+      "cart": [],
+      "wishlist": [],
+      "id": 1
+    }
+  ],
   "offers": [
     {
       "id": 1,

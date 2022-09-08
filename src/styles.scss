@@ -111,3 +111,12 @@
     margin-bottom: -2px;
   }
 }
+
+.heart {
+  .bi-heart-fill {
+    color: #e94560 !important;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
