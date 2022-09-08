@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { ProductService } from '../../../service/product.service';
 import { FormControl, FormGroup } from '@angular/forms';
 import { OnDestroy } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -28,9 +29,14 @@ export class ShopComponent implements OnInit, OnDestroy {
 
   private destroy$ = new Subject();
 
+  private brands$ = new BehaviorSubject<string[]>([]);
+  public brands = this.brands$.asObservable();
+
   @Input() products: IproductCard[] = [];
 
   ngOnInit(): void {
+    this.brandFilter();
+
     this.form.controls.search.valueChanges
       .pipe(
         takeUntil(this.destroy$),
@@ -44,6 +50,7 @@ export class ShopComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.brands$.next([]);
     this.destroy$.next(true);
     this.destroy$.complete();
   }
@@ -55,40 +62,41 @@ export class ShopComponent implements OnInit, OnDestroy {
   public filterForm = new FormGroup({
     min: new FormControl<number>(0),
     max: new FormControl<number>(0),
-    apple: new FormControl<boolean>(false),
-    dell: new FormControl<boolean>(false),
-    samsung: new FormControl<boolean>(false),
-    asus: new FormControl<boolean>(false),
-    acer: new FormControl<boolean>(false),
   });
 
   public reset(): void {
     this.service.product(this.router.url);
   }
 
+  private brandFilter(): void {
+    setTimeout(() => {
+      let myArray: string[] = [];
+
+      this.products.forEach((item) => {
+        myArray.push(item.brand);
+      });
+      let unique = myArray.filter((v, i, a) => a.indexOf(v) === i);
+      this.brands$.next(unique);
+    }, 400);
+  }
+
   public filter(): void {
     let url = `${this.router.url}?`;
+
+    let input = document.querySelectorAll('input[type=checkbox]');
+    input.forEach((item) => {
+      let checked = (item as HTMLInputElement).checked;
+      if (checked) {
+        url += `&brand=${item.id}`;
+      }
+    });
+
     let min = this.filterForm.controls.min.value as number;
     let max = this.filterForm.controls.max.value as number;
-    let apple = this.filterForm.controls.apple.value as boolean;
-    let samsung = this.filterForm.controls.samsung.value as boolean;
-    let dell = this.filterForm.controls.dell.value as boolean;
-    let asus = this.filterForm.controls.asus.value as boolean;
-    let acer = this.filterForm.controls.acer.value as boolean;
 
     min > 0 ? (url += `&price_gte=${min}`) : (url += '');
 
     max > min ? (url += `&price_lte=${max}`) : (url += '');
-
-    apple ? (url += `&brand=apple`) : (url += '');
-
-    dell ? (url += `&brand=dell`) : (url += '');
-
-    samsung ? (url += `&brand=samsung`) : (url += '');
-
-    asus ? (url += `&brand=asus`) : (url += '');
-
-    acer ? (url += `&brand=acer`) : (url += '');
 
     this.service.product(url);
   }

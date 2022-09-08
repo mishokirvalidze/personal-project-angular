@@ -7,35 +7,16 @@
         </h2>
 
         <form [formGroup]="filterForm" (ngSubmit)="filter()">
-            <div class="brands">
+            <ng-container *ngIf="brands | async as brands">
+                <ng-container *ngFor="let brand of brands">
+                    <div class="brand flex center">
+                        <input type="checkbox" [id]="brand">
+                        <label [for]="brand">{{ brand }}</label>
+                    </div>
+                </ng-container>
+            </ng-container>
 
-                <div class="brand flex center">
-                    <input formControlName="apple" type="checkbox" id="apple">
-                    <label for="apple">Apple</label>
-                </div>
-
-                <div class="brand flex center">
-                    <input formControlName="asus" type="checkbox" id="asus">
-                    <label for="asus">Asus</label>
-                </div>
-
-                <div class="brand flex center">
-                    <input formControlName="samsung" type="checkbox" id="samsung">
-                    <label for="samsung">Samsung</label>
-                </div>
-
-                <div class="brand flex center">
-                    <input formControlName="dell" type="checkbox" id="dell">
-                    <label for="dell">Dell</label>
-                </div>
-
-                <div class="brand flex center">
-                    <input formControlName="acer" type="checkbox" id="acer">
-                    <label for="acer">Acer</label>
-                </div>
-
-            </div>
-            <div class="price-rage flex center between">
+            <div class="price-range flex center between">
                 <input formControlName="min" type="number" placeholder="min">
                 <span>-</span>
                 <input formControlName="max" type="number" placeholder="max">
@@ -53,8 +34,6 @@
                 </span>
             </button>
         </form>
-
-
 
     </div>
     <div class="products-container flex ">

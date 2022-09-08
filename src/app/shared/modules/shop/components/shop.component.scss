@@ -21,22 +21,22 @@
     }
 
     form {
-      .brands {
+      .brand {
         margin-bottom: 20px;
-        .brand {
-          input {
-            margin-right: 15px;
-            width: 20px;
-            height: 20px;
-          }
 
-          label {
-            font-size: 18px;
-          }
+        input {
+          margin-right: 15px;
+          width: 20px;
+          height: 20px;
+        }
+
+        label {
+          font-size: 18px;
+          text-transform: uppercase;
         }
       }
 
-      .price-rage {
+      .price-range {
         width: 100%;
 
         input {
