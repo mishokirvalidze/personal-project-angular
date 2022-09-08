@@ -1,0 +1,77 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="component-header flex">
+            <h2 class="component-header-child">wishlist</h2>
+        </div>
+
+        <ng-container *ngIf="wishlist | async as wishlist">
+            <ng-container *ngIf="wishlist && wishlist.length > 0; else empty">
+                <div class="wishlist-container flex between">
+                    <div class="product-list">
+                        <table>
+
+                            <thead>
+                                <th class="empty"></th>
+                                <th>Product Name</th>
+                                <th>Unit Price</th>
+                                <th>Stock Status</th>
+                                <th class="empty"></th>
+                            </thead>
+
+
+                            <tbody>
+                                <ng-container *ngFor="let item of wishlist">
+
+                                    <tr>
+                                        <td class="td-img">
+                                            <div class="img">
+                                                <a routerLink="/details" [queryParams]="{id:item.id, path:item.path}">
+                                                    <img [src]="item.imgs[0]" [alt]="item.alt">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="td-name">
+                                            <a routerLink="/details" [queryParams]="{id:item.id, path:item.path}">
+                                                {{ item.name }}
+                                            </a>
+                                        </td>
+                                        <td class="td-price">${{ item.price }}</td>
+
+                                        <td class="td-status">
+                                            <span>IN STOCK</span>
+                                        </td>
+                                        <td class="td-icon"><i class="bi bi-trash" (click)="delete(item)"></i>
+                                        </td>
+                                    </tr>
+                                </ng-container>
+
+                            </tbody>
+
+                            <button class="btn-primary btn-clear relative" (click)="deleteAll()">
+                                <span class="btn-primary-child relative">Delete all</span>
+                            </button>
+                        </table>
+
+                    </div>
+                </div>
+            </ng-container>
+
+        </ng-container>
+
+
+        <ng-template #empty>
+            <div class="empty-wishlist flex center">
+                <img src="../../../../assets/images/wishlist/wishlist.png" alt="">
+
+                <button class="btn-primary relative">
+                    <span class="btn-primary-child relative">
+                        <a routerLink="/">Back Home</a>
+                    </span>
+                </button>
+            </div>
+
+        </ng-template>
+
+
+    </div>
+</div>
