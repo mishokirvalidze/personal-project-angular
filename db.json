@@ -399,6 +399,546 @@
           "value": "Windows 10 Pro"
         }
       ]
+    },
+    {
+      "id": 5,
+      "path": "desktop",
+      "name": "Skytech Blaze Gaming PC Desktop",
+      "brand": "skytech",
+      "price": 1399,
+      "smallDesc": "Skytech Blaze Gaming PC Desktop – INTEL Core i7 11700F 2.5 GHz, RTX 3060 Ti, 1TB NVME SSD, 16G DDR4 3200, 600W GOLD PSU, 240mm AIO, AC Wi-Fi, Windows 10 Home 64-bit",
+      "imgs": [
+        "/desktop/4_1.jpg",
+        "/desktop/4_2.jpg",
+        "/desktop/4_3.jpg",
+        "/desktop/4_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Skytech"
+        },
+        {
+          "key": "Processor",
+          "value": "INTEL Core i7 11700F 2.5 GHz"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "RTX 3060 Ti"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "path": "desktop",
+      "name": "MSI Business Desktop PRO DP21",
+      "brand": "msi",
+      "price": 629,
+      "smallDesc": "MSI Business Desktop PRO DP21 11MA-215US Intel Core i5 11th Gen 11400 (2.60GHz) 8GB DDR4 250 GB PCIe SSD Intel UHD Graphics 730 Windows 11 Pro 64-bit",
+      "imgs": [
+        "/desktop/9_1.jpg",
+        "/desktop/9_2.jpg",
+        "/desktop/9_3.jpg",
+        "/desktop/9_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "MSI"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i5 11th Gen 11400"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "Intel UHD Graphics 630"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "path": "desktop",
+      "name": "MSI Gaming Desktop Codex RS 11TC-058US",
+      "brand": "msi",
+      "price": 1199,
+      "smallDesc": "MSI Gaming Desktop Codex RS 11TC-058US Intel Core i7 11th Gen 11700F (2.50GHz) 16GB DDR4 1 TB PCIe SSD NVIDIA GeForce RTX 3060 Windows 11 Home 64-bit",
+      "imgs": [
+        "/desktop/10_1.jpg",
+        "/desktop/10_2.jpg",
+        "/desktop/10_3.jpg",
+        "/desktop/10_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "MSI"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 11700F"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "NVIDIA GeForce RTX 3060"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "path": "desktop",
+      "name": "Yeyian Gaming Desktop Shoge X01",
+      "brand": "yeyian",
+      "price": 1030,
+      "smallDesc": "Yeyian Gaming Desktop Shoge X01 YPB-SHO-X01 Intel Core i5 10th Gen 10400F (2.90GHz) 8GB DDR4 512 GB NVMe SSD NVIDIA GeForce GTX 1660 SUPER Windows 10 Home 64-bit",
+      "imgs": [
+        "/desktop/15_1.jpg",
+        "/desktop/15_2.jpg",
+        "/desktop/15_3.jpg",
+        "/desktop/15_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "yeyian"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 11700F"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "NVIDIA GeForce RTX 3060"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "path": "desktop",
+      "name": "Dell OptiPlex 5090 Desktop",
+      "brand": "dell",
+      "price": 1269,
+      "smallDesc": "Dell OptiPlex 5090 Desktop, Intel Core i5-11500 Upto 4.6GHz, 64GB RAM, 1TB NVMe SSD, DVDRW, Displayport, Wi-Fi, Bluetooth, Windows 10 Pro",
+      "imgs": [
+        "/desktop/16_1.jpg",
+        "/desktop/16_2.jpg",
+        "/desktop/16_3.jpg",
+        "/desktop/16_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Dell"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 11700F"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "NVIDIA GeForce RTX 3060"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "path": "desktop",
+      "name": "HP Desktop Computer Pavilion",
+      "brand": "hp",
+      "price": 564,
+      "smallDesc": "HP Desktop Computer Pavilion TP01-3030 Intel Core i3 12th Gen 12100 (3.30GHz) 8GB DDR4 512 GB PCIe SSD Intel UHD Graphics 730 Windows 11 Home 64-bit",
+      "imgs": [
+        "/desktop/39_1.jpg",
+        "/desktop/39_2.jpg",
+        "/desktop/39_3.jpg",
+        "/desktop/39_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "HP"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i3 12th Gen 12100 (3.30GHz)"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "Intel UHD Graphics 730"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "path": "desktop",
+      "name": "ABS Legend Gaming PC - Intel i9 12900KS",
+      "brand": "abs",
+      "price": 3599,
+      "smallDesc": "ABS Legend Gaming PC - Intel i9 12900KS - GeForce RTX 3080 - Corsair Dominator Platinum 32GB DDR5 5200MHz - 1TB PCIe 4.0 NVMe SSD",
+      "imgs": [
+        "/desktop/18_1.jpg",
+        "/desktop/18_2.jpg",
+        "/desktop/18_3.jpg",
+        "/desktop/18_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ABS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel i9 12900KS"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "GeForce RTX 3080"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "path": "desktop",
+      "name": "Thermaltake LCGS AH-360S Gaming Desktop",
+      "brand": "thermaltake",
+      "price": 2000,
+      "smallDesc": "Thermaltake LCGS AH-360S Gaming Desktop (AMD Ryzen 5 5600X 6-core, 16GB DDR4 3600MHz RGB Memory, 1TB NVMe M.2 SSD, NVIDIA GeForce RTX 3060, Win10 Home)",
+      "imgs": [
+        "/desktop/27_1.jpg",
+        "/desktop/27_2.jpg",
+        "/desktop/27_3.jpg",
+        "/desktop/27_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Thermaltake"
+        },
+        {
+          "key": "Processor",
+          "value": "AMD Ryzen 5 5600X 6-core"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "GeForce RTX 3080"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "path": "desktop",
+      "name": "Thermaltake LCGS Shadow 360 Gaming Desktop",
+      "brand": "thermaltake",
+      "price": 1800,
+      "smallDesc": "Thermaltake LCGS Shadow 360 Gaming Desktop (AMD Ryzen 5 5600X 6-core, 16GB DDR4 3600MHz RGB Memory, 1TB NVMe M.2 SSD, NVIDIA GeForce RTX 3060, Win10 Home)",
+      "imgs": [
+        "/desktop/30_1.jpg",
+        "/desktop/30_2.jpg",
+        "/desktop/30_3.jpg",
+        "/desktop/30_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Thermaltake"
+        },
+        {
+          "key": "Processor",
+          "value": "AMD Ryzen 5 5600X 6-core"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "GeForce RTX 3080"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "path": "desktop",
+      "name": "ASUS ROG Strix G10 Gaming Desktop PC",
+      "brand": "asus",
+      "price": 1200,
+      "smallDesc": "ASUS ROG Strix G10 Gaming Desktop PC, AMD Ryzen 7 5800X Processor, GeForce RTX 3060, 16GB DDR4 RAM, 512GB PCIe SSD + 1TB HDD, Wi-Fi 5, Windows 11 Home, G10DK-NB766",
+      "imgs": [
+        "/desktop/32_1.jpg",
+        "/desktop/32_2.jpg",
+        "/desktop/32_3.jpg",
+        "/desktop/32_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ASUS"
+        },
+        {
+          "key": "Processor",
+          "value": "AMD Ryzen 7 5800X Processor"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "GeForce RTX 3060"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "path": "desktop",
+      "name": "Velztorm Lux CTO Gaming Desktop PC",
+      "brand": "velztorm",
+      "price": 5499,
+      "smallDesc": "Velztorm Lux CTO Gaming Desktop PC Liquid-Cooled (AMD Ryzen 9-5950X 16-Core, 128GB DDR4, 4TB PCIe SSD + 6TB HDD (3.5), GeForce RTX 3090 24GB, AC WiFi, 360mm AIO, RGB Fans, 1000W PSU, Win10 Pro)",
+      "imgs": [
+        "/desktop/37_1.jpg",
+        "/desktop/37_2.jpg",
+        "/desktop/37_3.jpg",
+        "/desktop/37_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Velztorm"
+        },
+        {
+          "key": "Processor",
+          "value": "AMD Ryzen 9-5950X 16-Core"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "GeForce RTX 3090"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "path": "desktop",
+      "name": "Velztorm Parvux Custom Built Gaming Desktop",
+      "brand": "velztorm",
+      "price": 2399,
+      "smallDesc": "Velztorm Parvux Custom Built Gaming Desktop Liquid-Cooled (AMD Ryzen 7 - 5800X 8-Core, GeForce RTX 3060 Ti 8GB, 32GB DDR4, 2TB PCIe SSD, RGB Fans, 750W PSU, WiFi 6,Bluetooth 5.1, Win 10 Home)",
+      "imgs": [
+        "/desktop/38_1.jpg",
+        "/desktop/38_2.jpg",
+        "/desktop/38_3.jpg",
+        "/desktop/38_4.jpg"
+      ],
+      "alt": "desktop",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Velztorm"
+        },
+        {
+          "key": "Processor",
+          "value": "AMD Ryzen 7 - 5800X 8-Core"
+        },
+        {
+          "key": "RAM",
+          "value": "16 GB DDR4"
+        },
+        {
+          "key": "GPU/VGA Type",
+          "value": "GeForce RTX 3060"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "512 GB"
+        },
+        {
+          "key": "Power Supply",
+          "value": "255W"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows 10 Pro"
+        }
+      ]
     }
   ],
   "notebook": [
@@ -409,7 +949,11 @@
       "price": 1199,
       "brand": "asus",
       "smallDesc": "ASUS VivoBook Pro 16X OLED Laptop, 16 WQUXGA 16:10 Display, Intel Core i7-11370H CPU, NVIDIA GeForce RTX 3050, 16GB RAM, 1TB SSD, Windows 11 Pro, DialPad, Comet Grey, N7600PC-NB74",
-      "imgs": ["/notebook/1_1.jpg", "/notebook/1_2.jpg", "/notebook/1_3.jpg"],
+      "imgs": [
+        "/notebook/1_1.jpg",
+        "/notebook/1_2.jpg",
+        "/notebook/1_3.jpg"
+      ],
       "alt": "notebook",
       "description": [
         {
@@ -461,7 +1005,11 @@
       "price": 700,
       "brand": "asus",
       "smallDesc": "ASUS Laptop VivoBook R565EA-US31T Intel Core i3 11th Gen 1115G4 (3.00GHz) 4GB Memory 128 GB PCIe SSD Intel UHD Graphics 15.6 Touchscreen Windows 11 in S mode",
-      "imgs": ["/notebook/2_1.jpg", "/notebook/2_2.jpg", "/notebook/2_3.jpg"],
+      "imgs": [
+        "/notebook/2_1.jpg",
+        "/notebook/2_2.jpg",
+        "/notebook/2_3.jpg"
+      ],
       "alt": "notebook",
       "description": [
         {
@@ -513,7 +1061,11 @@
       "price": 579,
       "brand": "asus",
       "smallDesc": "ASUS VivoBook 15 F515 Thin and Light Laptop, 15.6 FHD Display, Core i7-1165G7 Processor, Iris Xe Graphics, 8GB DDR4 RAM, 512GB SSD, Fingerprint, Windows 11 Home, Slate Grey, F515EA-DH75",
-      "imgs": ["/notebook/3_1.jpg", "/notebook/3_2.jpg", "/notebook/3_3.jpg"],
+      "imgs": [
+        "/notebook/3_1.jpg",
+        "/notebook/3_2.jpg",
+        "/notebook/3_3.jpg"
+      ],
       "alt": "notebook",
       "description": [
         {
@@ -565,7 +1117,11 @@
       "price": 1099,
       "brand": "asus",
       "smallDesc": "ASUS ZenBook 14X OLED Laptop, 14 WQXGA+ 16:10 Touch Display, Intel Core i7-1165G7 CPU, NVIDIA GeForce MX450, 16GB RAM, 512GB SSD, Windows 11 Pro, Pine Grey, UX5400EG-XB73T",
-      "imgs": ["/notebook/4_1.jpg", "/notebook/4_2.jpg", "/notebook/4_3.jpg"],
+      "imgs": [
+        "/notebook/4_1.jpg",
+        "/notebook/4_2.jpg",
+        "/notebook/4_3.jpg"
+      ],
       "alt": "notebook",
       "description": [
         {
@@ -591,6 +1147,678 @@
         {
           "key": "Processor",
           "value": "Apple M1"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "path": "notebook",
+      "name": "ASUS ZenBook 14 Home & Business Laptop",
+      "price": 700,
+      "brand": "asus",
+      "smallDesc": "ASUS ZenBook 14 Home & Business Laptop (Intel i5-1240P 12-Core, 14.0 90Hz 2880 x 1800, Intel Iris Xe, 8GB LPDDR5 4800MHz RAM, 256GB SSD, Backlit KB, Wifi, USB 3.2, HDMI, Webcam, Win 11 Home)",
+      "imgs": [
+        "/notebook/6_1.jpg",
+        "/notebook/6_2.jpg",
+        "/notebook/6_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ASUS"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel i5-1240P 12-Core"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "path": "notebook",
+      "name": "Acer Laptop Swift 3 SF314-511-75UX",
+      "price": 749,
+      "brand": "acer",
+      "smallDesc": "Acer Laptop Swift 3 SF314-511-75UX Intel Core i7 11th Gen 1165G7 (2.80GHz) 16GB Memory 512 GB NVMe SSD Intel Iris Xe Graphics 14.0 Windows 10 Home 64-bit Intel Evo Platform",
+      "imgs": [
+        "/notebook/7_1.jpg",
+        "/notebook/7_2.jpg",
+        "/notebook/7_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Acer"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "path": "notebook",
+      "name": "Acer Predator Helios 300 PH315-54-760S Gaming Laptop",
+      "price": 1299,
+      "brand": "acer",
+      "smallDesc": "Acer Predator Helios 300 PH315-54-760S Gaming Laptop | Intel i7-11800H | NVIDIA GeForce RTX 3060 Laptop GPU | 15.6 Full HD 144Hz 3ms IPS Display | 16GB DDR4 | 512GB SSD | Killer WiFi 6 | RGB Keyboard",
+      "imgs": [
+        "/notebook/8_1.jpg",
+        "/notebook/8_2.jpg",
+        "/notebook/8_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Acer"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "path": "notebook",
+      "name": "HP ProBook 430 G8 13.3 Rugged Notebook",
+      "price": 894,
+      "brand": "hp",
+      "smallDesc": "HP ProBook 430 G8 13.3 Rugged Notebook - Full HD - 1920 x 1080 - Intel Core i5 (11th Gen) i5-1135G7 Quad-core (4 Core) - 8 GB RAM - 256 GB SSD - Pike Silver Plastic",
+      "imgs": [
+        "/notebook/10_1.jpg",
+        "/notebook/10_2.jpg",
+        "/notebook/10_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "HP"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "path": "notebook",
+      "name": "HP ProBook 430 G8 13.3 Rugged Notebook",
+      "price": 1779,
+      "brand": "hp",
+      "smallDesc": "HP ZBook Firefly 14 G7 Workstation Laptop (Intel i5-10210U 4-Core, 16GB RAM, 1TB m.2 SATA SSD, 14.0 Full HD (1920x1080), Intel UHD, Fingerprint, Wifi, Bluetooth, Webcam, 2xUSB 3.1, Win 10 Pro)",
+      "imgs": [
+        "/notebook/11_1.jpg",
+        "/notebook/11_2.jpg",
+        "/notebook/11_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "HP"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "path": "notebook",
+      "name": "HP 17t Laptop",
+      "price": 1779,
+      "brand": "hp",
+      "smallDesc": "2021 Newest HP 17t Laptop | 17.3 HD+ Touch Display | 11th Gen Intel Core i7-1165G7 Processor | 32GB DDR4 RAM | 1TB SSD + 1TB HDD | Wi-Fi 6 | Backlit KB | Webcam | HDMI | Silver",
+      "imgs": [
+        "/notebook/12_1.jpg",
+        "/notebook/12_2.jpg",
+        "/notebook/12_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "HP"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "path": "notebook",
+      "name": "MSI Laptop Prestige 14 Evo A12M-081",
+      "price": 799,
+      "brand": "msi",
+      "smallDesc": "MSI Laptop Prestige 14 Evo A12M-081 Intel Core i5 12th Gen 1240P (1.70GHz) 16 GB Memory 512 GB NVMe SSD Intel Iris Xe Graphics 14.0 Windows 11 Home 64-bit",
+      "imgs": [
+        "/notebook/13_1.jpg",
+        "/notebook/13_2.jpg",
+        "/notebook/13_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "MSI"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "path": "notebook",
+      "name": "MSI Laptop Creator 15 A11UH-492",
+      "price": 2600,
+      "brand": "msi",
+      "smallDesc": "MSI Laptop Creator 15 A11UH-492 Intel Core i7 11th Gen 11800H (2.30GHz) 16GB Memory 1 TB NVMe SSD NVIDIA GeForce RTX 3080 Laptop GPU 15.6 4K / UHD Windows 10 Pro 64-bit",
+      "imgs": [
+        "/notebook/14_1.jpg",
+        "/notebook/14_2.jpg",
+        "/notebook/14_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "MSI"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "path": "notebook",
+      "name": "Dell Inspiron 7706 2-in-1 Laptop",
+      "price": 1599,
+      "brand": "dell",
+      "smallDesc": "Newest Dell Inspiron 7706 2-in-1 Laptop, 17 QHD+ Touchscreen, Intel Core i7-1165G7, 64GB RAM, 2TB PCIe SSD, Webcam, Backlit KB, Fingerprint Reader, HDMI, Thunderbolt 4, Wi-Fi 6, Windows 11 Home",
+      "imgs": [
+        "/notebook/15_1.jpg",
+        "/notebook/15_2.jpg",
+        "/notebook/15_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Dell"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "path": "notebook",
+      "name": "Dell Inspiron 15 3511 Laptop",
+      "price": 619,
+      "brand": "dell",
+      "smallDesc": "2022 Newest Dell Inspiron 15 3511 Laptop, 15.6 FHD Touchscreen, Intel Core i5-1035G1, 16GB RAM, 512GB PCIe NVMe M.2 SSD, SD Card Reader, Webcam, HDMI, WiFi, Windows 11 Home, Black",
+      "imgs": [
+        "/notebook/16_1.jpg",
+        "/notebook/16_2.jpg",
+        "/notebook/16_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Dell"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "path": "notebook",
+      "name": "SAMSUNG Laptop Galaxy Book2 Pro",
+      "price": 1449,
+      "brand": "samsung",
+      "smallDesc": "SAMSUNG Laptop Galaxy Book2 Pro NP950XED-KA1US Intel Core i7 12th Gen 1260P (2.10GHz) 16 GB LPDDR5 Memory 512 GB PCIe SSD Intel Iris Xe Graphics 15.6 Windows 11 Home 64-bit",
+      "imgs": [
+        "/notebook/17_1.jpg",
+        "/notebook/17_2.jpg",
+        "/notebook/17_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "SAMSUNG"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
+        },
+        {
+          "key": "RAM",
+          "value": "8 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "256 GB"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 49.9 Wh Up to 18 hours"
+        },
+        {
+          "key": "Operating System",
+          "value": "Windows"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "path": "notebook",
+      "name": "Microsoft Laptop Surface Laptop 4 5L1-00024",
+      "price": 1519,
+      "brand": "microsoft",
+      "smallDesc": "Microsoft Laptop Surface Laptop 4 5L1-00024 Intel Core i7 11th Gen 1185G7 (3.00GHz) 8 GB LPDDR4X Memory 512 GB SSD Intel Iris Xe Graphics 15.0 Touchscreen Windows 10 Pro 64-bit",
+      "imgs": [
+        "/notebook/17_1.jpg",
+        "/notebook/17_2.jpg",
+        "/notebook/17_3.jpg"
+      ],
+      "alt": "notebook",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Microsoft"
+        },
+        {
+          "key": "screen size",
+          "value": "16"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "2560x1600"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "IPS"
+        },
+        {
+          "key": "Processor",
+          "value": "Intel Core i7 11th Gen 1165G7"
         },
         {
           "key": "RAM",
@@ -849,6 +2077,1020 @@
         {
           "key": "brand",
           "value": "Samsung"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "path": "smartphone",
+      "name": "Samsung Galaxy S22 Ultra",
+      "price": 750,
+      "brand": "samsung",
+      "smallDesc": "Samsung Galaxy Note 20 Ultra 5G Factory Unlocked Android Cell Phone | US Version | 128GB of Storage | Mobile Gaming Smartphone | Long-Lasting Battery | Mystic Black",
+      "imgs": [
+        "/smartphone/6_1.jpg",
+        "/smartphone/6_2.jpg",
+        "/smartphone/6_3.jpg",
+        "/smartphone/6_4.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Samsung"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "path": "smartphone",
+      "name": "Google Pixel 6 5G",
+      "price": 500,
+      "brand": "google",
+      "smallDesc": "Google Pixel 6 5G, 6.4 OLED Display, 128GB + 8GB RAM, 50MP Camera, Google TensorTitan M2 security coprocessor, Factory Unlocked, International Version",
+      "imgs": [
+        "/smartphone/15_1.jpg",
+        "/smartphone/15_2.jpg",
+        "/smartphone/15_3.jpg",
+        "/smartphone/15_4.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Google"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "path": "smartphone",
+      "name": "Google Pixel 6 pro 5G",
+      "price": 722,
+      "brand": "google",
+      "smallDesc": "Google Pixel 6 Pro, 6.7 OLED Display, 128GB + 12GB Ram, Google Tensor - Titan M2 security coprocessor, 50MP Triple Camera, 5G Smartphone with Advanced Pixel Camera.",
+      "imgs": [
+        "/smartphone/17_1.jpg",
+        "/smartphone/17_2.jpg",
+        "/smartphone/17_3.jpg",
+        "/smartphone/17_4.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Google"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "path": "smartphone",
+      "name": "Motorola - Moto G 5G",
+      "price": 450,
+      "brand": "motorola",
+      "smallDesc": "Motorola - Moto G 5G 256GB (2022 Unlocked) - Moonlight Gray PATE0002US Smart Cell Phone Smartphone",
+      "imgs": [
+        "/smartphone/11_1.jpg",
+        "/smartphone/11_2.jpg",
+        "/smartphone/11_3.jpg",
+        "/smartphone/11_4.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Motorola"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "path": "smartphone",
+      "name": "Google Pixel 5a (5G)",
+      "price": 450,
+      "brand": "google",
+      "smallDesc": "Google Pixel 5a (5G) GA02618-US 5G Cell Phone US 6.34 Mostly Black 128GB 6GB RAM",
+      "imgs": [
+        "/smartphone/16_1.jpg",
+        "/smartphone/16_2.jpg",
+        "/smartphone/16_3.jpg",
+        "/smartphone/16_4.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Google"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "path": "smartphone",
+      "name": "Xiaomi 11T Pro Dual-SIM",
+      "price": 431,
+      "brand": "xiaomi",
+      "smallDesc": "Xiaomi 11T Pro Dual-SIM 256GB ROM + 8GB RAM (GSM only | No CDMA) Factory Unlocked 5G Smart Phone (Meteorite Gray) - International Version",
+      "imgs": [
+        "/smartphone/18_1.jpg",
+        "/smartphone/18_2.jpg",
+        "/smartphone/18_3.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Xiaomi"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "path": "smartphone",
+      "name": "Xiaomi Redmi Note 11 Pro",
+      "price": 299,
+      "brand": "xiaomi",
+      "smallDesc": "Xiaomi Redmi Note 11 Pro 6.67-inch 2400x1080P AMOLED Display 5G Smartphone 8GB 128GB 5160mAh Battery Android 11-Black",
+      "imgs": [
+        "/smartphone/20_1.jpg",
+        "/smartphone/20_2.jpg",
+        "/smartphone/20_3.jpg",
+        "/smartphone/20_4.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Xiaomi"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "path": "smartphone",
+      "name": "Xiaomi 12 Pro DUAL SIM",
+      "price": 824,
+      "brand": "xiaomi",
+      "smallDesc": "Xiaomi 12 Pro DUAL SIM 256GB ROM + 12GB RAM (GSM | CDMA) Factory Unlocked 5G Smartphone (Blue) - International Version",
+      "imgs": [
+        "/smartphone/21_1.jpg",
+        "/smartphone/21_2.jpg",
+        "/smartphone/21_3.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Xiaomi"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "path": "smartphone",
+      "name": "ASUS Zenfone 9 AI2202",
+      "price": 718,
+      "brand": "asus",
+      "smallDesc": "ASUS Zenfone 9 AI2202 (GSM ONLY NO CDMA) unlocked | 8GB/128GB | Black",
+      "imgs": [
+        "/smartphone/26_1.jpg",
+        "/smartphone/26_2.jpg",
+        "/smartphone/26_3.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ASUS"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "path": "smartphone",
+      "name": "ASUS ZenFone 8",
+      "price": 718,
+      "brand": "asus",
+      "smallDesc": "ASUS ZenFone 8 (ZS590KS) 8/128 (GSM ONLY NO CDMA) unlocked | 8 GB/128 GB | Obsidian Black",
+      "imgs": [
+        "/smartphone/27_1.jpg",
+        "/smartphone/27_2.jpg",
+        "/smartphone/27_3.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ASUS"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "path": "smartphone",
+      "name": "ASUS ZenFone 8 Flip",
+      "price": 667,
+      "brand": "asus",
+      "smallDesc": "ASUS ZenFone 8 Flip (ZS672KS) 8/256 (GSM ONLY NO CDMA) unlocked | 8GB/256GB | Galactic Black",
+      "imgs": [
+        "/smartphone/28_1.jpg",
+        "/smartphone/28_2.jpg",
+        "/smartphone/28_3.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ASUS"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "path": "smartphone",
+      "name": "ASUS ROG Phone 6",
+      "price": 1189,
+      "brand": "asus",
+      "smallDesc": "ASUS ROG Phone 6 (GSM ONLY NO CDMA) unlocked | 16 GB/512 GB | Phantom black",
+      "imgs": [
+        "/smartphone/25_1.jpg",
+        "/smartphone/25_2.jpg",
+        "/smartphone/25_3.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "ASUS"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "path": "smartphone",
+      "name": "Apple iPhone 13 Pro",
+      "price": 1200,
+      "brand": "apple",
+      "smallDesc": "2021 New Apple iPhone 13 Pro (512GB, Sierra Blue) +GSM Unlocked",
+      "imgs": [
+        "/smartphone/37_1.jpg",
+        "/smartphone/37_2.jpg",
+        "/smartphone/37_3.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Apple"
+        },
+        {
+          "key": "screen size",
+          "value": "6.5''"
+        },
+        {
+          "key": "Screen Resolution",
+          "value": "1080 x 2400"
+        },
+        {
+          "key": "PPI",
+          "value": "405"
+        },
+        {
+          "key": "Screen/Panel Type",
+          "value": "Super AMOLED"
+        },
+        {
+          "key": "Union standard",
+          "value": "2G, 3G, 4G, 4.5G"
+        },
+        {
+          "key": "Sensors",
+          "value": "Proximity, Compass, Accelerometer, Face ID, Fingerprint"
+        },
+        {
+          "key": "Processor",
+          "value": "Qualcomm SM7125 Snapdragon 720G (8 nm)"
+        },
+        {
+          "key": "RAM",
+          "value": "2 GB"
+        },
+        {
+          "key": "Internal Memory",
+          "value": "32 GB"
+        },
+        {
+          "key": "Camera",
+          "value": "64 + 8 + 5 MP"
+        },
+        {
+          "key": "Frontal Camera",
+          "value": "32 MP"
+        },
+        {
+          "key": "Type Of Battery",
+          "value": "Li-Po 4500 mAh"
+        },
+        {
+          "key": "Operating System",
+          "value": "Android 11"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "path": "smartphone",
+      "name": "Apple iPhone 12 Pro",
+      "price": 836,
+      "brand": "apple",
+      "smallDesc": "Apple iPhone 12 Pro 128GB GSM/CDMA Fully Unlocked - Pacific Blue",
+      "imgs": [
+        "/smartphone/34_1.png",
+        "/smartphone/34_2.jpg",
+        "/smartphone/34_3.jpg"
+      ],
+      "alt": "phone",
+      "description": [
+        {
+          "key": "brand",
+          "value": "Apple"
         },
         {
           "key": "screen size",
