@@ -43,14 +43,16 @@ export class ProductCardComponent implements OnInit, OnDestroy {
   public isToWishlist = this.isToWishlist$.asObservable();
 
   ngOnInit(): void {
-    this.wishlistService.getWishlist();
-    this.wishlistService.wishlist.forEach((items) => {
-      items.forEach((item) => {
-        if (item.id === this.card.id && item.path === this.card.path) {
-          this.isToWishlist$.next(true);
-        }
+    if (this.service.isLoggedIn()) {
+      this.wishlistService.getWishlist();
+      this.wishlistService.wishlist.forEach((items) => {
+        items.forEach((item) => {
+          if (item.id === this.card.id && item.path === this.card.path) {
+            this.isToWishlist$.next(true);
+          }
+        });
       });
-    });
+    }
   }
 
   ngOnDestroy(): void {
