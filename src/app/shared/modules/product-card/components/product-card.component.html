@@ -7,9 +7,17 @@
             </div>
         </ng-container>
 
-        <div class="heart absolute">
-            <i class="bi bi-heart"></i>
-        </div>
+        <ng-container *ngIf="isToWishlist | async; else other">
+            <div class="heart absolute">
+                <i class="bi bi-heart-fill"></i>
+            </div>
+        </ng-container>
+
+        <ng-template #other>
+            <div class="heart absolute" (click)="addToWishlist(card)">
+                <i class="bi bi-heart"></i>
+            </div>
+        </ng-template>
 
         <div class="eye absolute">
             <i class="bi bi-eye"></i>

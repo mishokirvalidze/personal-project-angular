@@ -1,10 +1,15 @@
-import { IproductCard } from '../../../model/shared.model';
+import { Icart, IproductCard } from '../../../model/shared.model';
+import { SharedService } from '../../../service/shared.service';
+import { Router } from '@angular/router';
+import { OnDestroy } from '@angular/core';
+import { WishlistService } from '../../../service/wishlist.service';
 import {
   ChangeDetectionStrategy,
   Component,
   Input,
   OnInit,
 } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-product-card',
@@ -12,8 +17,12 @@ import {
   styleUrls: ['./product-card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProductCardComponent implements OnInit {
-  constructor() {}
+export class ProductCardComponent implements OnInit, OnDestroy {
+  constructor(
+    private service: SharedService,
+    private wishlistService: WishlistService,
+    private router: Router
+  ) {}
 
   @Input() card: IproductCard = {
     id: 0,
@@ -30,5 +39,30 @@ export class ProductCardComponent implements OnInit {
     brand: '',
   };
 
-  ngOnInit(): void {}
+  private isToWishlist$ = new BehaviorSubject<boolean>(false);
+  public isToWishlist = this.isToWishlist$.asObservable();
+
+  ngOnInit(): void {
+    this.wishlistService.getWishlist();
+    this.wishlistService.wishlist.forEach((items) => {
+      items.forEach((item) => {
+        if (item.id === this.card.id && item.path === this.card.path) {
+          this.isToWishlist$.next(true);
+        }
+      });
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.wishlistService.completeSubject();
+  }
+
+  public addToWishlist(card: IproductCard): void {
+    if (this.service.isLoggedIn()) {
+      this.wishlistService.addToWishlist(card);
+      this.isToWishlist$.next(true);
+    } else {
+      this.router.navigateByUrl('/login');
+    }
+  }
 }
