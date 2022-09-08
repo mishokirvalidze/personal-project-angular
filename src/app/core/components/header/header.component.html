@@ -30,10 +30,16 @@
 
             <div class="group-item flex">
                 <div class="relative">
-                    <a href="">
+                    <a routerLink="/wishlist">
                         <i class="bi bi-heart"></i>
                     </a>
-                    <span class="absolute flex center">0</span>
+                    <ng-container *ngIf="wishlistNum | async as num; else noWish">
+                        <span class="absolute flex center">{{ num }}</span>
+                    </ng-container>
+
+                    <ng-template #noWish>
+                        <span class="absolute flex center">0</span>
+                    </ng-template>
                 </div>
 
                 <div class=" relative">

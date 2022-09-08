@@ -3,6 +3,7 @@ import { SharedService } from '../../../shared/service/shared.service';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { CartService } from '../../../shared/service/cart.service';
+import { WishlistService } from '../../../shared/service/wishlist.service';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +15,8 @@ export class HeaderComponent implements OnInit {
   constructor(
     private service: SharedService,
     private cartService: CartService,
-    private router: Router
+    private router: Router,
+    private wishlistService: WishlistService
   ) {}
 
   ngOnInit(): void {
@@ -23,17 +25,24 @@ export class HeaderComponent implements OnInit {
     this.name = this.service.name;
     this.isLoggedIn = this.service.isSignUp;
     this.cartNum = this.cartService.numOfProducts;
-    if (this.service.isLoggedIn()) this.cartService.getCart();
+    this.wishlistNum = this.wishlistService.numOfProducts;
+    if (this.service.isLoggedIn()) {
+      this.cartService.getCart();
+      this.wishlistService.getWishlist();
+    }
   }
 
   public isLoggedIn = new Observable<boolean>();
 
   public cartNum = new Observable<number>();
 
+  public wishlistNum = new Observable<number>();
+
   public name = new Observable<string>();
 
   public logOut(): void {
     this.cartService.resetCart();
+    this.wishlistService.resetWishlist();
     localStorage.removeItem('name');
     localStorage.removeItem('token');
     localStorage.removeItem('id');
