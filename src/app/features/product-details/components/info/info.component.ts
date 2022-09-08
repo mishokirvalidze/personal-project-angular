@@ -21,6 +21,7 @@ export class InfoComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  @Input() isInWishlist = false;
   @Input() data: IproductCard = {
     id: 0,
     name: '',
@@ -35,6 +36,7 @@ export class InfoComponent implements OnInit {
   };
 
   @Output() addToCart = new EventEmitter<IproductCard>();
+  @Output() addToWishlist = new EventEmitter<IproductCard>();
 
   public inputValue = 1;
 
@@ -42,6 +44,15 @@ export class InfoComponent implements OnInit {
     if (this.service.isLoggedIn()) {
       data.quantity = this.inputValue;
       this.addToCart.emit(data);
+    } else {
+      this.router.navigateByUrl('/login');
+    }
+  }
+
+  public addWishlist(data: IproductCard): void {
+    if (this.service.isLoggedIn()) {
+      this.addToWishlist.emit(data);
+      this.isInWishlist = true;
     } else {
       this.router.navigateByUrl('/login');
     }

@@ -53,9 +53,17 @@
             </span>
         </button>
 
-        <div class="heart">
-            <i class="bi bi-heart"></i>
-        </div>
+        <ng-container *ngIf="isInWishlist; else other">
+            <div class="heart">
+                <i class="bi bi-heart-fill"></i>
+            </div>
+        </ng-container>
+
+        <ng-template #other>
+            <div class="heart" (click)="addWishlist(data)">
+                <i class="bi bi-heart"></i>
+            </div>
+        </ng-template>
 
     </div>
     <div class="share flex center">

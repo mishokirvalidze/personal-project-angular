@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 import { tap, BehaviorSubject, map, Subscription } from 'rxjs';
 import { IproductCard, Icart } from '../../shared/model/shared.model';
 import { CartService } from '../../shared/service/cart.service';
+import { WishlistService } from '../../shared/service/wishlist.service';
 
 @Component({
   selector: 'app-product-details',
@@ -20,31 +21,15 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
   constructor(
     private http: HttpClient,
     private activeRoute: ActivatedRoute,
-    private cartService: CartService
+    private cartService: CartService,
+    private wishlistService: WishlistService
   ) {}
 
   private unsubscribe: Subscription[] = [];
 
-  ngOnInit(): void {
-    this.unsubscribe.push(
-      this.activeRoute.queryParams
-        .pipe(
-          tap((data) => ((this.id = data['id']), (this.path = data['path'])))
-        )
-        .subscribe()
-    );
-
-    this.getProduct();
-  }
-
-  ngOnDestroy(): void {
-    this.unsubscribe.forEach((sub) => {
-      sub.unsubscribe();
-    });
-  }
-
   private id = 0;
   private path = '';
+  public wishlist = false;
 
   private productData$ = new BehaviorSubject<IproductCard>({
     id: 0,
@@ -62,6 +47,33 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
   });
 
   public productData = this.productData$.asObservable();
+
+  ngOnInit(): void {
+    this.unsubscribe.push(
+      this.activeRoute.queryParams
+        .pipe(
+          tap((data) => ((this.id = data['id']), (this.path = data['path'])))
+        )
+        .subscribe()
+    );
+
+    this.wishlistService.getWishlist();
+    this.wishlistService.wishlist.forEach((items) => {
+      items.forEach((item) => {
+        if (item.id === Number(this.id) && item.path === this.path) {
+          this.wishlist = true;
+        }
+      });
+    });
+
+    this.getProduct();
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe.forEach((sub) => {
+      sub.unsubscribe();
+    });
+  }
 
   private getProduct(): void {
     this.http
@@ -93,5 +105,23 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
     arr.push(data as Icart);
 
     this.cartService.pushInCartList(arr);
+  }
+
+  public addWishlist(data: IproductCard): void {
+    let arr: Icart[] = [];
+
+    this.unsubscribe.push(
+      this.wishlistService.wishlist
+        .pipe(
+          tap((wishlistData) => {
+            arr = wishlistData;
+          })
+        )
+        .subscribe()
+    );
+
+    arr.push(data as Icart);
+
+    this.wishlistService.pushInWishlist(arr);
   }
 }

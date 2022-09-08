@@ -12,7 +12,8 @@
 
                 <div class="info">
 
-                    <app-info [data]="data" (addToCart)="cart($event)"></app-info>
+                    <app-info [data]="data" (addToCart)="cart($event)" (addToWishlist)="addWishlist($event)"
+                        [isInWishlist]="wishlist"></app-info>
 
                 </div>
 
