@@ -1,12 +1,27 @@
-.component-header {
-  margin: 0 40px;
+.wrapper {
+  .container {
+    .component-header {
+      margin: 0 40px;
+    }
+
+    .offers-container {
+      padding: 30px;
+      max-width: 100%;
+      width: 100%;
+      .error {
+        color: red;
+        margin: auto;
+      }
+    }
+  }
 }
 
-.offers-container {
-  padding: 30px;
-
-  .error {
-    color: red;
-    margin: auto;
+@media screen and (max-width: 1290px) {
+  .wrapper {
+    .container {
+      .offers-container {
+        flex-wrap: wrap;
+      }
+    }
   }
 }

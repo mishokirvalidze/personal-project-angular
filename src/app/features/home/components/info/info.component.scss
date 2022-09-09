@@ -38,3 +38,19 @@
     }
   }
 }
+
+@media screen and (max-width: 1245px) {
+  .container {
+    .item {
+      padding: 10px 30px 10px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .container {
+    .item {
+      padding: 10px 20px 10px 20px;
+    }
+  }
+}

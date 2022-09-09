@@ -60,7 +60,6 @@
 
     .notebook-container {
       width: 77%;
-      overflow: hidden;
     }
   }
 
@@ -68,5 +67,23 @@
     color: red;
     padding: 30px 0;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .inner-container {
+    justify-content: center;
+
+    .left-banner {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    .notebook-container {
+      flex-wrap: wrap;
+    }
   }
 }

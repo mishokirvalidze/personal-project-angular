@@ -69,3 +69,20 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 1300px) {
+  .inner-container {
+    justify-content: center;
+    .left-banner {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    .smartphone-container {
+      flex-wrap: wrap;
+    }
+  }
+}

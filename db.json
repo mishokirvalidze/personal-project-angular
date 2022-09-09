@@ -4,8 +4,123 @@
       "email": "misho@mail.com",
       "password": "$2a$10$UIULE9j/wdRJ.6oOLs/xDOjpSGZtLTdcyMDTxhL2dVtFQXu6/abe.",
       "name": "misho",
-      "cart": [],
-      "wishlist": [],
+      "cart": [
+        {
+          "id": 2,
+          "path": "notebook",
+          "name": "ASUS VivoBook ",
+          "price": 700,
+          "brand": "asus",
+          "smallDesc": "ASUS Laptop VivoBook R565EA-US31T Intel Core i3 11th Gen 1115G4 (3.00GHz) 4GB Memory 128 GB PCIe SSD Intel UHD Graphics 15.6 Touchscreen Windows 11 in S mode",
+          "imgs": [
+            "../../../../../assets/images/notebook/2_1.jpg",
+            "../../../../../assets/images/notebook/2_2.jpg",
+            "../../../../../assets/images/notebook/2_3.jpg"
+          ],
+          "alt": "notebook",
+          "description": [
+            {
+              "key": "brand",
+              "value": "ASUS"
+            },
+            {
+              "key": "screen size",
+              "value": "16"
+            },
+            {
+              "key": "Screen Resolution",
+              "value": "2560x1600"
+            },
+            {
+              "key": "PPI",
+              "value": "405"
+            },
+            {
+              "key": "Screen/Panel Type",
+              "value": "IPS"
+            },
+            {
+              "key": "Processor",
+              "value": "Apple M1"
+            },
+            {
+              "key": "RAM",
+              "value": "8 GB"
+            },
+            {
+              "key": "Internal Memory",
+              "value": "256 GB"
+            },
+            {
+              "key": "Type Of Battery",
+              "value": "Li-Po 49.9 Wh Up to 18 hours"
+            },
+            {
+              "key": "Operating System",
+              "value": "Windows"
+            }
+          ],
+          "quantity": 1
+        }
+      ],
+      "wishlist": [
+        {
+          "id": 1,
+          "name": "ASUS VivoBook Pro",
+          "imgs": [
+            "../../../../../assets/images/notebook/1_1.jpg",
+            "../../../../../assets/images/notebook/1_2.jpg",
+            "../../../../../assets/images/notebook/1_3.jpg"
+          ],
+          "price": 1199,
+          "alt": "notebook",
+          "smallDesc": "ASUS VivoBook Pro 16X OLED Laptop, 16 WQUXGA 16:10 Display, Intel Core i7-11370H CPU, NVIDIA GeForce RTX 3050, 16GB RAM, 1TB SSD, Windows 11 Pro, DialPad, Comet Grey, N7600PC-NB74",
+          "description": [
+            {
+              "key": "brand",
+              "value": "ASUS"
+            },
+            {
+              "key": "screen size",
+              "value": "16"
+            },
+            {
+              "key": "Screen Resolution",
+              "value": "2560x1600"
+            },
+            {
+              "key": "PPI",
+              "value": "405"
+            },
+            {
+              "key": "Screen/Panel Type",
+              "value": "IPS"
+            },
+            {
+              "key": "Processor",
+              "value": "Apple M1"
+            },
+            {
+              "key": "RAM",
+              "value": "8 GB"
+            },
+            {
+              "key": "Internal Memory",
+              "value": "256 GB"
+            },
+            {
+              "key": "Type Of Battery",
+              "value": "Li-Po 49.9 Wh Up to 18 hours"
+            },
+            {
+              "key": "Operating System",
+              "value": "Windows"
+            }
+          ],
+          "path": "notebook",
+          "brand": "asus"
+        }
+      ],
       "id": 1
     }
   ],

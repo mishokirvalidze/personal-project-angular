@@ -173,3 +173,19 @@
     }
   }
 }
+
+@media screen and (max-width: 1295px) {
+  .wrapper {
+    .container {
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .wrapper {
+    .container {
+      width: 40%;
+    }
+  }
+}

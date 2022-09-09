@@ -1,9 +1,13 @@
-<ng-container *ngIf="!(error | async); else other">
-    <ng-container *ngIf="card |async as card">
-        <app-shop [products]="card"></app-shop>
-    </ng-container>
-</ng-container>
+<div class="wrapper">
+    <div class="container">
+        <ng-container *ngIf="!(error | async); else other">
+            <ng-container *ngIf="card |async as card">
+                <app-shop [products]="card"></app-shop>
+            </ng-container>
+        </ng-container>
 
-<ng-template #other>
-    <p class="error">Product not foud please check server</p>
-</ng-template>
+        <ng-template #other>
+            <p class="error">Product not foud please check server</p>
+        </ng-template>
+    </div>
+</div>
