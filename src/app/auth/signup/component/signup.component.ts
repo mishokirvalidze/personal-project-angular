@@ -8,7 +8,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { IsignUpForm } from '../model/signup.model';
 import { passwordValidator } from '../validator/validator';
 import { SharedService } from '../../../shared/service/shared.service';
-import { BehaviorSubject, tap } from 'rxjs';
+import { BehaviorSubject, Subscription, tap } from 'rxjs';
 import { Iregister } from '../../../shared/model/shared.model';
 import { Router } from '@angular/router';
 
@@ -21,6 +21,8 @@ import { Router } from '@angular/router';
 export class SignupComponent implements OnInit, OnDestroy {
   constructor(private service: SharedService, private router: Router) {}
 
+  private unsubscribe = new Subscription();
+
   ngOnInit(): void {
     this.service.error.pipe(tap((data) => this.errors$.next(data))).subscribe();
 
@@ -32,12 +34,13 @@ export class SignupComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.errors$.next('');
     this.formData$.unsubscribe();
+    this.unsubscribe.unsubscribe();
   }
 
   private errors$ = new BehaviorSubject<string>('');
   public errors = this.errors$.asObservable();
 
-  formData$ = new BehaviorSubject<Iregister>({
+  private formData$ = new BehaviorSubject<Iregister>({
     email: '',
     password: '',
     name: '',

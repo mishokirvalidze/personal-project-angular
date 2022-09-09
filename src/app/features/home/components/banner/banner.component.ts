@@ -17,7 +17,7 @@ import { OnDestroy } from '@angular/core';
 export class BannerComponent implements OnInit, OnDestroy {
   constructor() {}
 
-  interval: NodeJS.Timer | undefined;
+  private interval: NodeJS.Timer | undefined;
 
   ngOnInit(): void {
     this.interval = setInterval(() => {
@@ -31,14 +31,15 @@ export class BannerComponent implements OnInit, OnDestroy {
 
   @Input() images: Icarousel[] = [];
 
-  index = 0;
-  currentIndex$ = new BehaviorSubject<number>(this.index);
+  private index = 0;
+  private currentIndex$ = new BehaviorSubject<number>(this.index);
+  public currentIndex = new BehaviorSubject<number>(this.index);
 
-  selectedImage(index: number): void {
+  public selectedImage(index: number): void {
     this.index = index;
   }
 
-  onPrevClick(): void {
+  public onPrevClick(): void {
     if (this.index === 0) {
       this.index = this.images.length - 1;
       this.currentIndex$.next(this.index);
@@ -48,7 +49,7 @@ export class BannerComponent implements OnInit, OnDestroy {
     }
   }
 
-  onNextClick(): void {
+  public onNextClick(): void {
     if (this.index === this.images.length - 1) {
       this.index = 0;
       this.currentIndex$.next(this.index);

@@ -8,7 +8,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { IloginForm } from '../model/login.model';
 import { SharedService } from '../../../shared/service/shared.service';
 import { Ilogin } from '../../../shared/model/shared.model';
-import { BehaviorSubject, tap } from 'rxjs';
+import { BehaviorSubject, tap, Subscription } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Component({
@@ -20,8 +20,12 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit, OnDestroy {
   constructor(private service: SharedService, private router: Router) {}
 
+  private unsubscribe = new Subscription();
+
   ngOnInit(): void {
-    this.service.error.pipe(tap((data) => this.errors$.next(data))).subscribe();
+    this.unsubscribe = this.service.error
+      .pipe(tap((data) => this.errors$.next(data)))
+      .subscribe();
     if (this.service.isLoggedIn()) {
       this.router.navigateByUrl('/');
     }
@@ -29,6 +33,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.errors$.next('');
+    this.unsubscribe.unsubscribe();
   }
 
   private errors$ = new BehaviorSubject<string>('');

@@ -5,13 +5,13 @@
                 <ng-container *ngFor="let img of images; let i = index">
 
                     <img class="animation" [src]="img.imgSrc" [alt]="img.alt"
-                        [ngClass]="{'active': (currentIndex$ | async) === i}">
+                        [ngClass]="{'active': (currentIndex | async) === i}">
 
                 </ng-container>
 
                 <div class="indicators absolute flex">
                     <ng-container *ngFor="let dots of images; let i = index">
-                        <span class="dot" [ngClass]="{'dot-active': (currentIndex$ | async) === i}"
+                        <span class="dot" [ngClass]="{'dot-active': (currentIndex | async) === i}"
                             (click)="selectedImage(i)">
                         </span>
                     </ng-container>

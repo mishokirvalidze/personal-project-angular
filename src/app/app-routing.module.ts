@@ -38,12 +38,6 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'shop',
-    loadChildren: () =>
-      import('./shared/modules/shop/shop.module').then((m) => m.ShopModule),
-  },
-
-  {
     path: 'desktop',
     loadChildren: () =>
       import('./features/desktop/desktop.module').then((m) => m.DesktopModule),
