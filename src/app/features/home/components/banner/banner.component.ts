@@ -33,7 +33,7 @@ export class BannerComponent implements OnInit, OnDestroy {
 
   private index = 0;
   private currentIndex$ = new BehaviorSubject<number>(this.index);
-  public currentIndex = new BehaviorSubject<number>(this.index);
+  public currentIndex = this.currentIndex$.asObservable();
 
   public selectedImage(index: number): void {
     this.index = index;
